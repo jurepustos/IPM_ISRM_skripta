@@ -1,0 +1,285 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[slovene]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+
+
+
+\hyphenpenalty=10000
+
+\begin{document}
+    \newtheorem{theorem}{Izrek}[section]
+    \newtheorem{definition}[theorem]{Definicija}
+    \newtheorem{corollary}[theorem]{Posledica}
+    \newtheorem{lemma}[theorem]{Lema}
+    \newtheorem{proposition}[theorem]{Trditev}
+    \newtheorem{example}[theorem]{Zgled}
+
+    \newtheorem*{remark}{Opomba}
+
+
+    \title{Izbrana poglavja iz matematike}
+    \author{Napisal Jure Pustoslemšek po zapiskih predavanj prof. dr. Petarja Pavešiča}
+    \date{Junij 2020}
+    \maketitle
+
+    \section{Abstraktna algebra: kolobarji in obsegi}
+
+    \begin{definition}[Kolobar]
+        Kolobar je množica, kateri smo priredili notranji operaciji seštevanja in množenja, ki zadostujeta spodnjim kriterijem. Eksplicitno ga lahko zapišemo kot \((K,+,\cdot)\).
+        \par
+        Pri \underline{seštevanju} velja \underline{komutativnost} in \underline{asociativnost} obstaja ničla 0 in za vsak \(a \in K\) obstaja nasprotni element \((-a) \in K\), torej lahko vedno odštevamo.
+        \[\forall a,b \in K: a + b = b + a\]
+        \[\forall a,b,c \in K: (a + b) + c = a + (b + c)\]
+        \[\forall a \in K \exists (-a) \in K: a + (-a) = a - a = 0\]
+        
+        \par
+        Pri \underline{množenju} nimamo dodatnih zahtev, wazen uglašenosti s seštevanjem - \underline{distibutivnost}.
+        \[\forall a,b,c \in K: a \cdot (b+c) = (a \cdot b) + (a \cdot c)\]
+
+        Rečeno drugače, kolobar je grupa za seštevanje in zaprta za množenje.
+    \end{definition}
+
+    Če ima množenje kakšno dodatno lastnost, to lastnost običajno izpostavimo\
+    \begin{center}
+        \begin{tabular}{ c c c }
+            Množenje je asociativno & \(\rightarrow\) & asociativni kolobar \\
+            Množenje je komutativno & \(\rightarrow\) & komutativni kolobar \\
+            Množenje ima enoto & \(\rightarrow\) & kolobar z enoto \\
+            Vsak \(a \neq 0 \in K\) ima inverz \(a^{-1}\) & \(\rightarrow\) & kolobar z deljenjem
+        \end{tabular}        
+    \end{center}
+
+    Literatura velikokrat v definiciji kolobarja zahteva tudi asociativnost in obstoj enote, zato bomo v nadaljevanju privzeli, da z izrazom "kolobar" mislimo na asociativen kolobar z enoto, komutativnost in deljenje pa bomo izrecno navedli.
+    
+    \begin{definition}[Obseg]
+        Kolobarju, v katerem je množenje asociativno, komutativno in ima enoto ter ima operacijo deljenja, rečemo \textbf{obseg}.
+    \end{definition}
+
+    \subsection{Kolobarji}
+
+    \begin{example}
+        Če dani kolobar nima enote, mu jo lahko dodamo: \\
+        \(K\) kolobar brez enote \\
+        Če dodamo 1, smo prisiljeni dodati tudi \(-1,2,-2,3,-3,...\) \\
+        Rešitev: na \(\mathbb{Z} \times K \) vpeljemo:
+        \[
+            (n,a)+(m,b) := (n+m,a+b)
+        \]
+        \[
+            (n,a) \cdot (m,b) := (nm, nb + ma + ab)
+        \]
+
+        Ničla je \((0,0)\), nasprotni element je \(-(m,a) = (-m,-a)\), enota je \((1,0)\). Če je \(K\) komutativen oz. asociativen, je to tudi \(\mathbb{Z} \times K\).
+    \end{example}
+
+    Kaj pa, če imamo kolobar, v katerem nekateri elementi nimajo inverza, ampak bi jih želeli dodati? Poskusimo to storiti na takšen način, kot smo v osnovni šoli definirali racionalna števila s celimi števili, in sicer z uvedbo ulomkov. 
+
+    \par
+    Naj bo \(K\) kolobar z enoto. Za \(a,b \in K, b \neq 0\) vpeljemo simbole \(\frac{a}{b}\), s katerimi računamo 
+    \[\frac{a}{b} + \frac{c}{d} := \frac{ad + bc}{bd}\] 
+    \[\frac{a}{b} \cdot \frac{c}{d} := \frac{ac}{bd}\]
+
+    Pojavi se težava: lahko se zgodi, da je \(bd = 0\), čeprav \(b \neq 0\) in \(d \neq 0\). Tega pri številih nismo vajeni vendar:
+    \begin{example}[Matrike]
+        \[
+            \begin{bmatrix}
+                0 & 1 \\
+                0 & 0 \\
+            \end{bmatrix}
+            \cdot
+            \begin{bmatrix}
+                0 & 1 \\
+                0 & 0 \\
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                0 & 0 \\
+                0 & 0 \\
+            \end{bmatrix}
+        \]
+    \end{example}
+
+    \begin{example}[\(\mathbb{Z}_{12}\): ostanki po modulu 12]
+        \[2 \cdot 6 = 0\]
+        \[3 \cdot 8 = 0\]
+    \end{example}
+    
+    \begin{definition}[Delitelj niča]
+        V kolobarju \(K\) je \(0 \neq a \in K\) \textbf{delitelj niča}, če obstaja tak \(b \neq 0\), da je \(a \cdot b = 0\).
+    \end{definition}
+
+    \begin{proposition}
+        Delitelj niča nima inverza.
+    \end{proposition}
+
+    \begin{proof}
+        Če za \(a \in K\) obstajata takšna neničelna \(b,c \in K\), da velja
+        \begin{center}
+            \(a \cdot b = 0\) in \(c \cdot a = 1\)
+        \end{center}
+        dobimo protislovje
+        \[b = 1 \cdot b = (c\cdot a) \cdot b = c \cdot (a \cdot b) = c \cdot 0 = 0\]
+    \end{proof}
+
+    \begin{definition}[Celi kolobar]
+        \textbf{Celi kolobar} je komutativni kolobar, v katerem ni deliteljev niča. Ekvivalentno, v celem kolobarju iz \(a \cdot b = 0\) sledi \(a = 0\) ali \(b = 0\).
+    \end{definition}
+
+    Naj bo \(K\) celi kolobar. Tvorimo \textbf{kolobar ulomkov} \(\overline{K}\): elementi so ulomki \(\frac{a}{b}\), vendar \(\frac{a}{b} \equiv \frac{c}{d}\), če je \(ad = bc\) (ulomke lahko krajšamo). Definiramo operaciji kot prej:
+    \[\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}\]
+    \[\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}\]
+
+    Preverimo lahko, da je \(\overline{K}\) obseg.
+    \par
+    Zakaj moramo enačiti sorazmerne ulomke?
+    \par
+    Zaradi definicije operacij: \(\frac{a}{b} - \frac{ka}{kb} = \frac{kab - kab}{kb^2} = 0\), torej mora veljati \(\frac{ka}{kb} \equiv \frac{a}{b}\).
+
+    \begin{remark}
+        Z nekaj truda lahko vpeljemo ulomke tudi pri nekomutativnih kolobarjih in kolobarjih z deliterlji niča. Takrat dobimo kolobarje ulomkov, ki niso obsegi.
+    \end{remark}
+
+    Delitelj niča ne more biti obrnljiv, obrnljiv element pa ni delitelj niča. Ali je lahko element kolobarja niti obrnljiv niti delitelj niča?
+    \begin{example}
+        \(\mathbb{Z}\) nima deliteljev niča, obrnljiva pa sta le \(1\) in \(-1\).
+    \end{example}
+
+    \begin{example}
+        \(\mathbb{Z}_{12}\)
+        \begin{itemize}
+            \item Delitelji niča: \(0,2,3,4,6,8,9,10\)
+            \item Obrnljivi: \(1,5,7,11\)
+        \end{itemize}
+    \end{example}
+
+    V končnih kolobarjih ni drugih možnosti, kar pove naslednji znameniti izrek.
+
+    \begin{theorem}[Wedderburnov izrek]
+        Končen kolobar brez deliteljev niča je obseg.
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(K\) končen kolobar brez deliteljev niča. Dokazati moramo, da so vsi elementi \(K - \{0\}\) obrnljivi.
+        \par
+        Za poljuben \(a \in K - \{0\}\) definiramo funkcijo
+        \[l_a: K \rightarrow K\] 
+        \[l_a(x) := a \cdot x\]
+        \par
+        Recimo, da za neka \(x,y \in K\) velja \(l_a(x) = l_a(y)\). Potem je \(ax = ay\), torej \(a(x-y = 0)\). Ker \(K\) nima deliteljev niča, sledi \(x = y\). Torej je \(l_a\) injektivna in ker slika iz \(K\) v \(K\), tudi bijektivna.
+        \par
+        Ker je \(l_a(K) = K\), je \(l_a(b) = a \cdot b = 1\) za nek \(b \in K\). Ponovimo razmislek za \(d_a (x):= x \cdot a\) in dobimo, da je \(d_a(c) = a \cdot c = 1\) za nek \(c \in K\). Iz \(c = c \cdot 1 = c \cdot (a \cdot b) = (c \cdot a) \cdot b = 1 \cdot b = b\) sledi \(c = b = a^{-1}\). \(K\) je torej kolobar z deljenjem. Če je \(K\) komutativen, je obseg.
+        \par
+        Dokaz komutativnosti zahteva nekaj dodatne teorije grup, zato ga ne bomo natančno navedli. Ideja je, da je center \(Z(K)\) (tj. elementi \(K\), ki komutirajo z vsemi elementi \(K\)) obseg, celoten \(K\) pa je vektorski prostor nad \(Z(K)\). Iz primerjave multiplikativnih grup lahko izpeljemo, da je \(K\) 1-razsežen vektorski prostor nad \(Z(K)\), torej \(K = Z(K)\).
+    \end{proof}
+
+    \begin{corollary}
+        \(\mathbb{Z}_n\) je obseg \(\Leftrightarrow\) \(n\) je praštevilo.
+    \end{corollary}
+
+    \begin{definition}[Karakteristika kolobarja]
+        \textbf{Karakteristika} kolobarja \(K\) je najmanjši \(n \in \mathbb{N}\), za katerega velja, da je \(n \cdot a = a+...+a=0\). Zapišemo jo kot \(char(K)=n\) ali \(char K = n\). Če tak \(n\) ne obstaja, potem pišemo \(char(K) = 0\).
+    \end{definition}
+
+    \begin{proposition}
+        Naj bo \(K\) kolobar.
+        \begin{enumerate}[label=\alph*)]
+            \item Če \(1 \in K\), potem je \(char(K) = \) red enote \(= min\ n\), da je \(n \cdot 1 = 0\).
+            \item Če \(K\) nima deliteljev niča, potem je \(char(K)\) praštevilo ali \(0\). 
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}[Dokaz \emph{(a)}]
+        Naj bo \(n\) red enote, torej je \(n \cdot 1 = 0\). Potem za vsak \(a \in K\) velja:
+        \[n \cdot a = (n \cdot 1) \cdot a = 0 \cdot a = 0\]
+        Iz tega sledi, da je \(char K \le n\). Ker je red \(1\) enak \(n\), je \(char K \ge n\), torej \(char K = n\).
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(b)}]
+            Denimo, da je \(char K = k \cdot l\) za \(k,l > 1\). Potem je \(0 = k \cdot l \cdot 1 = k \cdot l\). Ker v K ni deliteljev niča, je \(k \cdot 1 = 0\) ali \(l \cdot 1 = 0\), zato je po \((a)\) \(char K < k \cdot l\). Protislovje.
+    \end{proof}
+
+    \begin{definition}
+        Naj bosta \(K,L\) kolobarja.
+        \par
+        \(f:K \rightarrow L\) je \textbf{homomorfizem kolobarjev}, če velja:
+        \begin{center}
+            \(f(a + b) = f(a) + f(b)\)
+        \end{center}
+        \begin{center}
+            \(f(a \cdot b) = f(a) \cdot f(b)\)
+        \end{center}
+        za poljubna \(a,b \in K\).
+    \end{definition}
+
+    Bijektivnemu homomorfizmu rečemo \textbf{izomorfizem}.
+    \par
+    Poglejmo nekaj primerov homomorfizmov:
+
+    \begin{example}
+        \(\mathbb{Z} \xrightarrow{mod\ n} \mathbb{Z}_n\) je homomorfizem (dokaz ponovi korake dokaza, da je \(\mathbb{Z}_n\) kolobar).
+    \end{example}
+
+    \begin{example}
+        Konjugiranje \(\mathbb{C} \to \mathbb{C}\), \(z \mapsto \overline{z}\) je izomorfizem kolobarjev.
+    \end{example}
+
+    \begin{example}
+        Za poljuben \(a \in \mathbb{R}\) definiramo \(f_a: \mathbb{Z}[x] \rightarrow \mathbb{R}\) s predpisom \(f_a(p) = p(a)\)
+        \[f_a(p + q) = (p + q)(a) = p(a) + q(a) = f_a(p) + f_a(q)\]
+        \[f_a(p + q) = (p \cdot q)(a) = p(a) \cdot q(a) = f_a(p) \cdot f_a(q)\]
+    \end{example}
+
+    \begin{example}
+        \(a \mapsto 
+        \begin{bmatrix} 
+            a & 0 \\ 
+            0 & 0 
+        \end{bmatrix}\) 
+        je homomorfizem \(\mathbb{R} \rightarrow M_2(\mathbb{R})\).
+    \end{example}
+
+    \begin{example}
+        Splošneje \(f_a: \mathscr{C}(\mathbb{R}, \mathbb{R}) \rightarrow \mathbb{R}\) s predpisom \(f_a(g) := g(a)\) je tudi homomorfizem kolobarjev.
+    \end{example}
+
+    \begin{example}
+        \(a \mapsto 
+            \begin{bmatrix} 
+                0 & a \\ 
+                0 & 0 
+            \end{bmatrix}\) 
+        \underline{ni} homomorfizem \(\mathbb{R} \rightarrow M_2(\mathbb{R})\) (ohranja seštevanje, ne pa množenja).
+    \end{example}
+
+    \begin{example}
+        Preslikava \(\mathbb{C} \rightarrow M_2(\mathbb{R})\) s predpisom \(a + bi \mapsto 
+            \begin{bmatrix}
+                a & b \\
+                -b & a
+            \end{bmatrix}\)
+        je homomorfizem.
+    \end{example}
+
+    \begin{example}
+        \(a \mapsto a^p\) je homomorfizem \(\mathbb{Z}_p \rightarrow \mathbb{Z}_p\) (\(p\) praštevilo).
+    \end{example}
+
+    \begin{proposition}
+        Za homomorfizem \(f: K \rightarrow L\):
+        \begin{enumerate}[label=\alph*)]
+            \item \(f(a) = 0\); sledi iz \(f(0) = f(0+0) = f(0) + f(0)\)
+            \item \(f(-a) = -f(a)\); sledi iz \(0 = f(0) = f(a+(-a)) = f(a) + f(-a)\)
+            \item V splošnem ne zahtevamo \(f(1) = 1\); če to velja, pravimo, da je homomorfizem \textbf{unitalen}
+            \item Če je \(f\) unitalen homomorfizem in \(a\) obrnljiv, je \(f(a)\) obrnljiv
+        \end{enumerate}
+    \end{proposition}
+    
+
+
+\end{document}
