@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  28 JUN 2020 02:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  28 JUN 2020 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,24 +277,69 @@ Overfull \hbox (9.05734pt too wide) in paragraph at lines 131--132
  []
 
 [2] [3] [4]
-Overfull \hbox (30.07185pt too wide) in paragraph at lines 278--279
-[]\OT1/cmr/m/it/10.95 V splo^^Tsnem ne zah-te-vamo $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (1) = 1$\OT1/cmr/m/it/10.95 ; ^^Tce to ve-lja, pra-vimo, da je ho-mo-mor-fi-zem
+Overfull \hbox (3.8995pt too wide) in paragraph at lines 290--291
+\OT1/cmr/bx/n/10.95 Definicija 1.25 \OT1/cmr/m/n/10.95 (Uni-ta-len ho-mo-mor-fi-zem)\OT1/cmr/bx/n/10.95 . \OT1/cmr/m/it/10.95 Ho-mo-mor-fi-zem, za ka-te-rega ve-lja
  []
 
-[5] (d:/Documents and projects/Latex/IPM/ipm.aux) ) 
+
+Overfull \hbox (0.90527pt too wide) in paragraph at lines 294--295
+\OT1/cmr/bx/n/10.95 Trditev 1.26. []\OT1/cmr/m/it/10.95 Ce je $\OML/cmm/m/it/10.95 f$ \OT1/cmr/m/it/10.95 uni-ta-len ho-mo-mor-fi-zem in $\OML/cmm/m/it/10.95 a$ \OT1/cmr/m/it/10.95 obrn-ljiv, je $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 obrn-ljiv. 
+ []
+
+[5]
+Overfull \hbox (19.20636pt too wide) in paragraph at lines 428--429
+\OT1/cmr/bx/n/10.95 Definicija 1.35 \OT1/cmr/m/n/10.95 (Glavni ideal)\OT1/cmr/bx/n/10.95 . \OT1/cmr/m/it/10.95 Ideal, ki ga ge-ne-rira en sam ele-ment, ime-nu-jemo
+ []
+
+[6]
+Overfull \hbox (9.72816pt too wide) in paragraph at lines 462--463
+\OT1/cmr/bx/n/10.95 Definicija 1.39 \OT1/cmr/m/n/10.95 (Kvo-ci-en-tni ko-lo-bar)\OT1/cmr/bx/n/10.95 . \OT1/cmr/m/it/10.95 Mno^^Tzico ek-vi-va-len^^Tcnih ra-zre-dov re-la-cije
+ []
+
+[7]
+Overfull \hbox (11.54895pt too wide) in paragraph at lines 507--508
+\OT1/cmr/bx/n/10.95 Izrek 1.41 \OT1/cmr/m/n/10.95 (Iz-rek o izo-mor-fizmu)\OT1/cmr/bx/n/10.95 . \OT1/cmr/m/it/10.95 Naj bo $\OML/cmm/m/it/10.95 f$\OT1/cmr/m/it/10.95 : $\OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95 ! \OML/cmm/m/it/10.95 L$ \OT1/cmr/m/it/10.95 ho-mo-mor-fi-zem ko-lo-bar-jev.
+ []
+
+[8] [9]
+Overfull \hbox (8.1331pt too wide) in paragraph at lines 613--614
+[]\OT1/cmr/m/n/10.95 Za ne-skon^^Tcne raz^^Tsiritve je o^^Tcitno, zato se ome-jimo na kon^^Tcne raz^^Tsiritve. 
+ []
+
+
+Overfull \hbox (1.39822pt too wide) in paragraph at lines 619--620
+[]\OT1/cmr/m/n/10.95 Poka^^Tzimo tudi li-ne-arno ne-od-vi-snost baze. Re-cimo, da je li-ne-arno od-vi-sna.
+ []
+
+
+Overfull \hbox (8.36101pt too wide) in paragraph at lines 640--641
+[]\OT1/cmr/m/n/10.95 Kolobar lahko raz^^Tsirimo z ve^^Tc ele-menti $\OML/cmm/m/it/10.95 a[]; a[]; ::$ \OT1/cmr/m/n/10.95 na-en-krat. Tak^^Tsne raz^^Tsiritve
+ []
+
+[10]
+Overfull \hbox (10.7132pt too wide) in paragraph at lines 667--668
+\OT1/cmr/bx/n/10.95 Opomba. \OT1/cmr/m/it/10.95 Za dano ^^Tstevilo je obi^^Tcajno zelo te^^Tzko do-ka-zati, da je tran-scen-den-tna
+ []
+
+
+Overfull \hbox (28.12863pt too wide) in paragraph at lines 667--668
+\OT1/cmr/m/it/10.95 nad $\U/msb/m/n/10.95 Q$\OT1/cmr/m/it/10.95 . Na pri-mer, tran-scen-den-tnost $\OML/cmm/m/it/10.95 e$ \OT1/cmr/m/it/10.95 je bila do-ka-zana leta 1873, tran-scen-den-tnost
+ []
+
+[11] (d:/Documents and projects/Latex/IPM/ipm.aux) ) 
 Here is how much of TeX's memory you used:
- 5219 strings out of 480478
- 78650 string characters out of 5903486
- 338986 words of memory out of 5000000
- 21189 multiletter control sequences out of 15000+600000
+ 5221 strings out of 480478
+ 78680 string characters out of 5903486
+ 341986 words of memory out of 5000000
+ 21191 multiletter control sequences out of 15000+600000
  541755 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,432b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,474b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "d:/Documents and projects/Latex/IPM/ipm.pdf" (5 pages, 185926 bytes).
+Output written on "d:/Documents and projects/Latex/IPM/ipm.pdf" (11 pages, 214625 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

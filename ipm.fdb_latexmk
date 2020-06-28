@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1593303002 "d:/Documents and projects/Latex/IPM/ipm.tex" "d:/Documents and projects/Latex/IPM/ipm.pdf" "ipm" 1593303004
+["pdflatex"] 1593362863 "d:/Documents and projects/Latex/IPM/ipm.tex" "d:/Documents and projects/Latex/IPM/ipm.pdf" "ipm" 1593362864
   "c:/Users/Jure/.texlive2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1591731240 2434812 66789e619822436ef537c9f1fb179c3c ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1591559775 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1591561237 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -84,13 +84,13 @@
   "c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty" 1591566312 10216 5efd55f2010055e7b7875afd6a75be82 ""
   "c:/texlive/2020/texmf-dist/web2c/texmf.cnf" 1591562407 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "c:/texlive/2020/texmf.cnf" 1591567137 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "d:/Documents and projects/Latex/IPM/ipm.aux" 1593303003 302 12a1266c1cef9145f86ac378b29f50d7 ""
-  "d:/Documents and projects/Latex/IPM/ipm.tex" 1593302998 12525 d78a3bde50093ead93acbb325e93c285 ""
-  "ipm.aux" 1593303003 302 12a1266c1cef9145f86ac378b29f50d7 "pdflatex"
-  "ipm.tex" 1593302998 12525 d78a3bde50093ead93acbb325e93c285 ""
+  "d:/Documents and projects/Latex/IPM/ipm.aux" 1593362864 400 0a14bd44ddc1890adf30824475d6b98d ""
+  "d:/Documents and projects/Latex/IPM/ipm.tex" 1593362860 30438 cb3ee76c9a1247d06271a4eafce7da9c ""
+  "ipm.aux" 1593362864 400 0a14bd44ddc1890adf30824475d6b98d "pdflatex"
+  "ipm.tex" 1593362860 30438 cb3ee76c9a1247d06271a4eafce7da9c ""
   (generated)
-  "d:/Documents and projects/Latex/IPM/ipm.pdf"
-  "ipm.aux"
   "d:/Documents and projects/Latex/IPM/ipm.log"
   "ipm.log"
   "ipm.pdf"
+  "ipm.aux"
+  "d:/Documents and projects/Latex/IPM/ipm.pdf"

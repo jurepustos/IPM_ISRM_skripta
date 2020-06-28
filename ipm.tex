@@ -171,7 +171,7 @@
         \[l_a: K \rightarrow K\] 
         \[l_a(x) := a \cdot x\]
         \par
-        Recimo, da za neka \(x,y \in K\) velja \(l_a(x) = l_a(y)\). Potem je \(ax = ay\), torej \(a(x-y = 0)\). Ker \(K\) nima deliteljev niča, sledi \(x = y\). Torej je \(l_a\) injektivna in ker slika iz \(K\) v \(K\), tudi bijektivna.
+        Recimo, da za neka \(x,y \in K\) velja \(l_a(x) = l_a(y)\). Potem je \(ax = ay\), torej \(a(x-y) = 0\). Ker \(K\) nima deliteljev niča, sledi \(x = y\). Torej je \(l_a\) injektivna in ker slika iz \(K\) v \(K\), tudi bijektivna.
         \par
         Ker je \(l_a(K) = K\), je \(l_a(b) = a \cdot b = 1\) za nek \(b \in K\). Ponovimo razmislek za \(d_a (x):= x \cdot a\) in dobimo, da je \(d_a(c) = a \cdot c = 1\) za nek \(c \in K\). Iz \(c = c \cdot 1 = c \cdot (a \cdot b) = (c \cdot a) \cdot b = 1 \cdot b = b\) sledi \(c = b = a^{-1}\). \(K\) je torej kolobar z deljenjem. Če je \(K\) komutativen, je obseg.
         \par
@@ -207,7 +207,7 @@
     \begin{definition}
         Naj bosta \(K,L\) kolobarja.
         \par
-        \(f:K \rightarrow L\) je \textbf{homomorfizem kolobarjev}, če velja:
+        \(f\): \(K \rightarrow L\) je \textbf{homomorfizem kolobarjev}, če velja:
         \begin{center}
             \(f(a + b) = f(a) + f(b)\)
         \end{center}
@@ -230,7 +230,7 @@
     \end{example}
 
     \begin{example}
-        Za poljuben \(a \in \mathbb{R}\) definiramo \(f_a: \mathbb{Z}[x] \rightarrow \mathbb{R}\) s predpisom \(f_a(p) = p(a)\)
+        Za poljuben \(a \in \mathbb{R}\) definiramo \(f_a\): \(\mathbb{Z}[x] \rightarrow \mathbb{R}\) s predpisom \(f_a(p) = p(a)\)
         \[f_a(p + q) = (p + q)(a) = p(a) + q(a) = f_a(p) + f_a(q)\]
         \[f_a(p + q) = (p \cdot q)(a) = p(a) \cdot q(a) = f_a(p) \cdot f_a(q)\]
     \end{example}
@@ -245,7 +245,7 @@
     \end{example}
 
     \begin{example}
-        Splošneje \(f_a: \mathscr{C}(\mathbb{R}, \mathbb{R}) \rightarrow \mathbb{R}\) s predpisom \(f_a(g) := g(a)\) je tudi homomorfizem kolobarjev.
+        Splošneje \(f_a\): \(\mathscr{C}(\mathbb{R}, \mathbb{R}) \rightarrow \mathbb{R}\) s predpisom \(f_a(g) := g(a)\) je tudi homomorfizem kolobarjev.
     \end{example}
 
     \begin{example}
@@ -271,15 +271,403 @@
     \end{example}
 
     \begin{proposition}
-        Za homomorfizem \(f: K \rightarrow L\):
+        Za homomorfizem \(f\): \(K \rightarrow L\) velja:
         \begin{enumerate}[label=\alph*)]
-            \item \(f(a) = 0\); sledi iz \(f(0) = f(0+0) = f(0) + f(0)\)
-            \item \(f(-a) = -f(a)\); sledi iz \(0 = f(0) = f(a+(-a)) = f(a) + f(-a)\)
-            \item V splošnem ne zahtevamo \(f(1) = 1\); če to velja, pravimo, da je homomorfizem \textbf{unitalen}
-            \item Če je \(f\) unitalen homomorfizem in \(a\) obrnljiv, je \(f(a)\) obrnljiv
+            \item \(f(0) = 0\)
+            \item \(f(-a) = -f(a)\)
         \end{enumerate}
     \end{proposition}
     
+    \begin{proof}[Dokaz \emph{(a)}]
+        \(f(0) = f(0 + 0) = f(0) + f(0)\)
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(b)}]
+        \(0 = f(0) = f(a+(-a)) = f(a) + f(-a)\)
+    \end{proof}
+
+    \begin{definition}[Unitalen homomorfizem]
+        Homomorfizem, za katerega velja \(f(1) = 1\), je \textbf{unitalen}.
+    \end{definition}
+
+    \begin{proposition}
+        Če je \(f\) unitalen homomorfizem in \(a\) obrnljiv, je \(f(a)\) obrnljiv.
+    \end{proposition}
+
+    \begin{proof}
+        Naj bo \(f: K \to L\) unitalen homomorfizem kolobarjev in \(a \in K\) obrnljiv. Potem je
+        \[1 = f(1) = f(a \cdot a^{-1}) = f(a) \cdot f(a^{-1})\]
+        Potem je \(f(a^{-1})\) desni inverz za \(f(a)\). Po podobnem razmisleku vidimo, da je \(f(a^{-1})\) tudi levi inverz za \(f(a)\). Torej je \(f(a^{-1}) = f(a)^{-1}\).
+    \end{proof}
+
+    \begin{proposition}
+        Naj bo \(f\): \(K \to L\) homomorfizem kolobarjev. Potem je \(Im f\) podkolobar v \(L\).
+    \end{proposition}
+
+    \begin{proof}
+        Vzamemo poljubna \(x,y \in Im f\). Potem obstajata takšna \(a,b \in K\), da je \(f(a) = x\) in \(f(b) = y\) in zato velja
+        \[x + y = f(a) + f(b) = f(a + b) \in Im f\]
+        \[x \cdot y = f(a) \cdot f(b) = f(a \cdot b) \in Im f\]
+        Torej je \(Im f\) podkolobar v \(L\).
+    \end{proof}
+
+    \begin{proposition}
+        Naj bo \(f: K \to L\) homomorfizem kolobarjev. Potem je \(Ker f\) podkolobar v \(K\).
+    \end{proposition}
+
+    \begin{proof}
+        Vzamemo poljubna \(x,y \in Ker f\). Potem je \(f(x + y) = f(x) + f(y) = 0 + 0 = 0\), torej je \(x + y \in Ker f\). Podobno je \(f(x \cdot y) = f(x) \cdot f(y) = 0 \cdot 0 = 0\), torej je \(x \cdot y \in Ker f\). 
+    \end{proof}
 
 
+    \begin{definition}[Ideal kolobarja]
+        Podkolobar \(I \leq K\) je \textbf{ideal} v \(K\), če za vsak \(a \in K, x \in I\) velja \(a \cdot x \in I\) (levi ideal) in \(x \cdot a \in I\) (desni ideal). Označimo ga z \(I \triangleleft K\).
+    \end{definition}
+
+    \begin{example}
+        \(\{0\} \triangleleft K\) in \(K \triangleleft K\) sta "neprava" ideala.
+    \end{example}
+
+    \begin{example}
+        \(n \mathbb{Z} \triangleleft \mathbb{Z}\)
+    \end{example}
+
+    \begin{example}
+        \(\{a_1 x + a_2 x^2 + a_3 x^3 + ... + a_n x^n\ |\ a \in \mathbb{R}\} \triangleleft \mathbb{R}[x]\) so polinomi, za katere je \(p(0) = 0\). Splošneje, za \(a \in K\) je \(\{p \in K[x]\ |\ p(a) = 0\} \triangleleft K[x]\).
+    \end{example}
+
+    \begin{example}
+        \(\{
+            \begin{bmatrix}
+                x & 0 \\
+                y & 0 \\
+            \end{bmatrix}\
+            |\ x,y \in \mathbb{R}
+        \} \subseteq M_2(\mathbb{R})\) je podkolobar.
+
+        \[
+            \begin{bmatrix}
+                x & 0 \\
+                y & 0 \\
+            \end{bmatrix}
+            \pm
+            \begin{bmatrix}
+                z & 0 \\
+                w & 0 \\
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                x \pm z & 0 \\
+                y \pm w & 0 \\
+            \end{bmatrix}
+        \]
+
+        \[
+            \begin{bmatrix}
+                x & 0 \\
+                y & 0 \\
+            \end{bmatrix}
+            \cdot
+            \begin{bmatrix}
+                z & 0 \\
+                w & 0 \\
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                xz & 0 \\
+                yw & 0 \\
+            \end{bmatrix}
+        \]
+        Poleg tega je
+        \[
+            \begin{bmatrix}
+                a & b \\
+                c & d \\
+            \end{bmatrix}
+            \cdot
+            \begin{bmatrix}
+                x & 0 \\
+                y & 0 \\
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                ax + by & 0 \\
+                cx + dy & 0 \\
+            \end{bmatrix}
+        \]
+        \[
+            \begin{bmatrix}
+                x & 0 \\
+                y & 0 \\
+            \end{bmatrix}
+            \cdot
+            \begin{bmatrix}
+                a & b \\
+                c & d \\
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                ax & bx \\
+                ay & by \\
+            \end{bmatrix}
+        \]
+        Podana množica je levi ideal. 
+    \end{example}
+
+    \begin{proposition}
+        Naj bo \(f\): \(K \to L\) homomorfizem kolobarjev. Potem je \(Ker f\) (dvostranski) ideal v \(K\).
+    \end{proposition}
+
+    \begin{proof}
+        Vzemimo \(x \in Ker f\) in \(a \in K\). \(f(x) \cdot f(a) = f(x) \cdot f(a) = 0 \cdot f(a) = 0\), torej je \(x \cdot a \in Ker f\). Analogno, \(f(a \cdot x) = f(a) \cdot f(x) = f(a) \cdot 0 = 0\), torej je tudi \(a \cdot x \in Ker f\).
+    \end{proof}
+
+    Za \(x \in K\) je \(K \cdot x = \{a \cdot x\ |\ a \in K\}\) levi ideal v \(K\), \(x \cdot K\) pa desni. Dvostranski ideal, ki ga generira \(x\), pa ni \(K \cdot x \cdot K\), ker ni zaprt za seštevanje. Potrebno je vzeti vse možne vsote izrazov \(a \cdot x \cdot b\).
+
+    \begin{definition}[Glavni ideal]
+        Ideal, ki ga generira en sam element, imenujemo \textbf{glavni ideal} in ga zapišemo z \((x)\), kjer je \(x \in K\).
+    \end{definition}
+
+    \begin{proposition}
+        V \(\mathbb{Z}\) so vsi ideali glavni.
+    \end{proposition}
+
+    \begin{proof}
+        Naj bo \(I \triangleleft \mathbb{Z}\). Če je \(I = \{0\}\), potem je \(I = (0)\). Recimo, da \(I \neq (0)\). Potem obstaja vsaj eno pozitivno število v \(I\). Vzemimo najmanjše pozitivno število \(a \in I\). Pokazati moramo, da \(a\) deli vse elemente \(I\).
+        \par
+        Poljuben \(b \in I\) je po izreku o deljenju enak \(b = k \cdot a + r\) za natanko določena \(k \in \mathbb{Z}\) in \(0 \le r < a\). Potem je \(r = b - k \cdot a \in I\). Ker je \(a\) najmanjše pozitivno število v \(I\), je \(r = 0\), torej je \(b = k \cdot a\). \(I\) je torej generiran z \(a\).
+    \end{proof}
+
+    \begin{definition}[Glavnoidealski kolobar]
+        Kolobar, v katerem so vsi ideali glavni, je \textbf{glavnoidealski}.
+    \end{definition}
+
+    Naj bo \(I \triangleleft K\) dvostranski ideal. Na \(K\) vpeljemo relacijo \(\sim\):
+    \[a \sim b \Longleftrightarrow a - b \in I\]
+
+    \begin{proposition}
+        \(\sim\) je ekvivalenčna relacija.
+    \end{proposition}
+
+    \begin{proof}
+        \(\)\par
+        \(a - a = 0 \in I\), torej je \(a \sim a\).
+        \par
+        Če \(a - b \in I\), je tudi \(b - a \in I\), torej \(a \sim b \implies b \sim a\).
+        \par
+        Če \(a - b \in I\) in \(b - c \in I\), je tudi \(a - c \in I\). Torej je \(a \sim b, b\ \sim c \implies a \sim c\).
+    \end{proof}
+
+    \begin{definition}[Kvocientni kolobar]
+        Množico ekvivalenčnih razredov relacije \(\sim\) označimo z \(K / I\) in jo imenujemo \textbf{kvocientni kolobar}. 
+    \end{definition}
+
+    Ekvivalenčni razred elementa \(a \in K\) označimo \([a]\) ali \(a + I\) (oznaka je smiselna, ker je \([a] = \{a + x\ |\ x \in I\}) \equiv a + I\).
+
+    \par
+    Elemente \(K / I\) naravno seštevamo in množimo:
+    \[(a+I) + (b+I) := (a+b) + I\]
+    \[(a+I) \cdot (b+I) := (a \cdot b) + I)\]
+
+    Da bosta operaciji dobro definirani, moramo preveriti, sta neodvisni od izbire predstavnikov ekvivalečnih razredov. Najprej preverimo operacijo seštevanja:
+    \par
+    Če \(a' + I = a + I\) in \(b' + I = b + I\), je \(a - a' \in I\) in \(b - b' \in I\).
+    \[(a - a') + (b - b') = (a + b) - (a' + b') = (a + b) + I = (a' + b') + I\]
+    
+    Preverimo še za množenje:
+    \begin{center}
+        \(a' = a + x\) in \(b' = b + y\) za \(x,y \in I\).
+    \end{center}
+    
+    \[a' \cdot b' = a \cdot b + ay + xb + xy\]
+    \[(a' \cdot b') + I = (a \cdot b) + I\]
+
+    Zdaj vemo, da sta operaciji dobro definirani. Sedaj preverimo, da je \(K / I\) res kolobar.
+
+    \begin{proposition}
+        Naj bo \(K\) kolobar in \(I \triangleleft K\). Potem je \(K / I\) tudi kolobar.
+    \end{proposition}
+
+    \begin{proof}
+        Vzemimo poljubne \(a,b,c \in K / I\). Najprej preverimo, da je grupa za seštevanje:
+        \begin{center}
+            asociativnost: \(((a+b) + c) + I = (a+I) + (b+I) + (c+I) = (a+I) + ((b+c) + I) = (a + (b+c)) + I\) \\
+            komutativnost: \((a+b) + I = (a+I) + (b+I) = (b+I) + (a+I) = (b+a) + I\) \\
+            negativni element: \((a+b) + I = 0 + I \implies a + I = -b + I\)
+        \end{center} 
+
+        Preverimo še asociativnost in obstoj enote za množenje:
+        \begin{center}
+            asociativnost: \(((a \cdot b) \cdot c) + I = (a+I) \cdot (b+I) \cdot (c+I) = (a+I) \cdot ((b \cdot c) + I) = (a \cdot (b \cdot c)) + I\) \\
+            komutativnost: \((a \cdot b) + I = (a+I) \cdot (b+I) = (b+I) \cdot (a+I) = (b \cdot a) + I\) \\
+        \end{center}
+    \end{proof}
+
+    \begin{theorem}[Izrek o izomorfizmu]
+        Naj bo \(f\): \(K \to L\) homomorfizem kolobarjev. Potem je \(Ker f \triangleleft K\) in imamo naravni izomorfizem:
+        \begin{center}
+            \(\overline{f}\): \(K / Ker f \to Im f\) s predpisom \(\overline{f}(x + Ker f) := f(x)\)
+        \end{center}
+    \end{theorem}
+
+    \begin{proof}
+        \(Ker f \triangleleft K\) že vemo.
+        \par
+        Za \(u \in Ker f\) je \(f(x+u)=f(x)\), zato je definicija \(\overline{f}\) neodvisna od predstavnika razreda.
+        \par
+        \(\overline{f}\) je aditivna:
+        \[\overline{f}((x + Ker f) + (y + Ker f)) = \overline{f}((x+y) + Ker f)\] \[= f(x+y) = f(x) + f(y) = \overline{f}(x + Ker f) + \overline{f}(y + Ker f)\]
+
+        Za množenje opravimo analogni razmislek.
+
+        \[Ker \overline{f} = \{x + Ker f\ |\ \overline{f}(x + Ker f) = 0 \} = \{x\ |\ f(x) = 0\} = \{0 + Ker f\}\]
+        \(\overline{f}\) je torej injektivna.
+
+        \[Im \overline{f} = Im f\]
+        \(\overline{f}\) je surjektivna.
+    \end{proof}
+
+    \begin{proposition}
+        Komutativen kolobar \(K\) je obseg natanko tedaj, ko nima pravih idealov (tj. edina ideala sta \((0)\) in \(K\)).
+    \end{proposition}
+
+    \begin{proof}[Dokaz \(\implies\)]
+        Recimo, da je \(K\) obseg in \(I \triangleleft K\) neničelni ideal v \(K\) (\(I \neq (0)\)). Potem obstaja \(0 \neq x \in I\). Ker je \(x\) obrnljiv v \(K\), potem za vsak \(a \in K\) velja \(a = (a \cdot x^{-1}) \cdot x \in I\), torej je \(I = K\).
+    \end{proof}
+
+    \begin{proof}[Dokaz \(\Longleftarrow\)]
+        Recimo, da \(K\) nima pravih idealov. Naj bo \(0 \neq a \in K\). Potem je \((a) = K \cdot a = a \cdot K \triangleleft K\). Ker v \(K\) ni pravih idealov, je \((a) = K\). Ker  \(K\) vsebuje enoto in je celoten generiran z \(a\), je \(a \cdot b = b \cdot a = 1\) za nek \(b \in K\). Sledi, da je \(a\) obrnljiv, in ker smo za \(a\) izbrali poljuben element \(K\), so vsi elementi v \(K\) obrnljivi. Torej je \(K\) obseg.
+    \end{proof}
+
+    Poiščimo ideale v \(K / I\). Za pomoč definirajmo funkcijo
+    \begin{center}
+        \(q\): \(K \to K/I\) \\
+        \(x \mapsto x+I\) \\
+    \end{center}
+
+    \begin{proposition}
+        Naj bo \(K\) komutativen kolobar in \(I \triangleleft K\).
+        \begin{enumerate}[label=\alph*)]
+            \item Če je \(J \triangleleft K\), potem je \(q(J) \triangleleft K / I\).
+            \item Če je \(J \triangleleft K / I\), potem je \(q^{-1}(J) \triangleleft K\) in \(I \triangleleft q^{-1}(J)\) 
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}[Dokaz \emph{(a)}]
+        Vzamemo \(a \in K\) in \(x \in J\). Potem je \(a+I \in K / I\) in \(x + I \in q(J)\).
+        \[(a+I)(x+I) = (a \cdot x) + I \in q(J)\]
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(b)}]
+        Vzamemo \(a \in K\) in \(x \in q^{-1}(J)\). Potem je \(a+I \in K / I\) in \(x + I \in J\).
+        \[q(a \cdot x) = (a \cdot x) + I = (a+I)(x+I) \in J \implies ax \in q^{-1}(J)\]
+    \end{proof}
+
+    Pokazali smo, da so ideali v \(K / I\) natanko ideali oblike \(J / I\). \(J\) je torej natanko ideal v \(K\), ki vsebuje \(I\), hkrati pa je \(I \triangleleft J\).
+
+    \begin{definition}[Maksimalni ideal]
+        \textbf{Maksimalni ideal} v kolobarju \(K\) je pravi ideal, ki ni vsebovan v nobenem drugem pravem idealu.
+    \end{definition}
+
+    \begin{theorem}
+        Naj bo \(K\) kolobar in \(I \triangleleft K\). \(K / I\) je obseg natanko takrat, ko je \(I\) maksimalni ideal v \(K\).
+    \end{theorem}
+
+    \begin{proof}
+        Vemo, da je \(K / I\) obseg natanko takrat, ko nima pravih idealov. Ker nima pravih idealov, ni idealov v \(K\), ki bi vsebovali \(I\), torej je \(I\) maksimalen ideal.
+    \end{proof}
+
+    % \begin{theorem}
+    %     Naj bo \(R\) obseg. \(I \triangleleft R[x]\) je maksimalen natanko tedaj, ko je \(I = (p(x))\) za nek nerazcepen polinom \(p(x)\).
+    % \end{theorem}
+
+    % \begin{proof}[Dokaz \(\implies\)]
+    %   Vzamemo \(p(x) = q(x) \cdot r(x) \in R[x]\), kjer je \(q\) nekonstanten nerazcepen polinom in \(r\) neničeln polinom. Ker je \(st p \ge st q\), je \((p) \triangleleft (q) \triangleleft R[x]\). 
+    % \end{proof}
+
+    % \begin{proof}[Dokaz \(\Longleftarrow\)]
+    %     Naj bo \(I = (p)\) za nek nerazcepen polinom \(p \in R[x]\). Če ni maksimalen, je \((p) \triangleleft J \triangleleft R[x]\)
+    % \end{proof}
+
+
+    \pagebreak
+    \subsection{Obsegi}
+
+    Obseg je komutativen kolobar, v katerem so vsi neničelni elementi obrnljivi. Stvari, ki nas zanimajo pri kolobarjih, npr. ulomki, ideali, kvocienti itd., so pri obsegih precej nezanimive. Namesto tega se bomo ukvarjali z bolj zanimivimi pojmi.
+
+    \begin{definition}[Razširitev obsega]
+        Če je \(K\) podobseg obsega \(F\), pravimo, da je \(F\) \textbf{razširitev} obsega \(K\) in pišemo \(K \le F\).
+    \end{definition}
+
+    \begin{proposition}
+        če je \(F\) razširitev obsega \(K\), je \(F\) vektorski prostor nad \(K\).
+    \end{proposition}
+
+    Dimenzijo \(K\)-vektorskega prostora \(F\) \(dim_{K}F\) običajno označimo z \([F:K]\). Če je dimenzija končna, pravimo, da je \(F\) \textbf{končne razširitev}, sicer pa je \textbf{neskončna razširitev} \(K\).
+
+    \begin{theorem}
+        Za obsege \(K \le F \le E\) velja \([E:K] = [E:F] \cdot [F:K]\).
+    \end{theorem}
+
+    \begin{proof}
+        Za neskončne razširitve je očitno, zato se omejimo na končne razširitve.
+        \par
+        Naj bo \(x_1,...,x_m\) baza za \(F\) nad \(K\) in naj bo \(y_1,...,y_n\) baza za \(E\) nad \(F\). Pokazati moramo, da je \(\{x_i y_j\ |\ i = 1,...,m, j = 1,...,n\}\) baza \(E\) nad \(K\).
+        \par
+        Vzemimo \(e \in E\). \(e = f_1 y_1 + ... + f_n y_n\) za \(f_1,...,f_n \in F\). Obenem je \(f_i = k_{i1} x_1 + ... + k_{im} x_m\) za \(k_{ij} \in K\). Torej je \(e = \sum_{i = 1}^n \sum_{j = 1}^m k_{ij} x_j y_i\).
+        \par
+        Pokažimo tudi linearno neodvisnost baze. Recimo, da je linearno odvisna. Potem je \(0 = \sum_{i = 1}^n \sum_{j = 1}^m k_{ij} x_j y_i\). Ker so \(y_i\) linearno neodvisni, ke \(\sum_{j = 1}^m = 0\). Ker so tudi \(x_j\) linearno neodvisni, je \(k_{ij} = 0\) za vse \(i\) in \(j\). 
+    \end{proof}
+
+    Poglejmo si, kako izgleda najmanjša razširitev obsega \(K\), ki vsebuje nek \(a \in F\).
+    
+    \begin{proposition}
+        \(\)\par
+        \begin{enumerate}[label=\alph*)]
+            \item Najmanjši podkolobar \(F\), ki vsebuje \(K\) in \(a \in F\), je \(K[a] = \{p(a)\ |\ p \in K[x]\}\).
+            \item Najmanjši podobseg \(F\), ki vsebuje \(K\) in \(a \in F\), je \(K(a) = \{\frac{p(a)}{q(a)}\ |\ p,q \in K[x], q(a) \neq 0\}\).
+        \end{enumerate}
+    \end{proposition}
+
+    \begin{proof}[Dokaz \emph{(a)}]
+        Vsak kolobar, ki vsebuje \(K\) in \(a\), mora vsebovati tudi vse potence \(a\) in njihove \(K\)-linearne kombinacije \(k_0 + k_1 a + ... + k_n a^n\). Nadaljevanje dokaza izpuščeno.
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(b)}]
+        Obseg mora poleg \(K\)-linearnih kombinacij potenc \(a\) vsebovati še vse kvociente, katere predstavimo z ulomki oblike \(\frac{p(a)}{q(a)}\). Konstruiramo obseg ulomkov.
+    \end{proof}
+
+    Kolobar lahko razširimo z več elementi \(a_1,a_2,..\) naenkrat. Takšne razširitve označimo z \(K[a_1,a_2,...]\) za kolobarje in \(K(a_1,a_2,...)\) za obsege. Vrstni red dodanih elementov je lahko v zapisu poljuben.
+
+    \begin{definition}[Enostavna razširitev]
+        Razširitev obsega \(K\) je \textbf{enostavna}, če smo obsegu \(K\) dodali eden element \(a \in F\).
+    \end{definition}
+
+    Definiramo poseben homomorfizem kolobarjev:
+    \begin{center}
+        \(\phi_a\): \(K[x] \to F\) \\
+        \(\phi_a\): \(p(x) \mapsto p(a)\)
+    \end{center}
+
+    Zanima nas, ali je \(\phi_a\) injektiven.
+    \par
+    Če je \(\phi_a\) injektiven, je \(Ker f = \{0\}\), torej \(a\) ni ničla nobenega (trivialnega) polinoma s koeficienti v \(K\). Tedaj pravimo, da je \(a\) \textbf{transcendenten} nad \(K\).
+    \par
+    Če pa \(\phi_a\) ni injektiven, potem obstaja netrivialen polinom s koeficienti v \(K\), v katerem je \(a\) ničla. Tedaj pravimo, da je \(a\) \textbf{algebraičen} nad \(K\).
+    
+    \begin{definition}[Algebraična razširitev]
+        Naj bo \(F\) razširitev nad obsegom \(K\). Če so vsi elementi \(F\) algebraični nad \(K\), pravimo, da je \(F\) \textbf{algebraična razširitev} nad \(K\).
+    \end{definition}
+
+    \begin{definition}
+        Naj bo \(F\) razširitev nad obsegom \(K\). Če je vsaj eden element \(F\) transcendenten nad \(K\), je \(F\) \textbf{transcendentna razširitev} nad \(K\). 
+    \end{definition}
+
+    \begin{remark}
+        Za dano število je običajno zelo težko dokazati, da je transcendentna nad \(\mathbb{Q}\). Na primer, transcendentnost \(e\) je bila dokazana leta 1873, transcendentnost \(\pi\) je bila dokazana leta 1882, še vedno pa ne vemo, ali je \(\pi + e\) transcendentna nad \(\mathbb{Q}\).
+    \end{remark}
+
+    \begin{theorem}
+        če je \(a\) transcendenten nad \(K \le F\), potem je \(K[a] \cong K[x]\) in \(K(a) \cong K(x)\).
+    \end{theorem}
 \end{document}
