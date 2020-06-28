@@ -13,7 +13,7 @@
 \hyphenpenalty=10000
 
 \begin{document}
-    \newtheorem{theorem}{Izrek}[section]
+    \newtheorem{theorem}{Izrek}[subsection]
     \newtheorem{definition}[theorem]{Definicija}
     \newtheorem{corollary}[theorem]{Posledica}
     \newtheorem{lemma}[theorem]{Lema}
@@ -442,6 +442,18 @@
         Kolobar, v katerem so vsi ideali glavni, je \textbf{glavnoidealski}.
     \end{definition}
 
+
+    \begin{proposition}
+        Naj bo \(K\) obseg. Vsi ideali v \(K[x]\) so glavni.
+    \end{proposition}
+
+    \begin{proof}
+        Vzemimo \(I \triangleleft K\). Če je \(I = {0}\), je \(I = (0)\). Privzemimo, da je \(I \neq (0)\): Potem obstaja neničelni nekonstantni polinom najmanjše stopnje \(p \in K[x]\), za katerega lahko privzamemo, da je moničen. Pokažimo, da \(p\) deli vse elemente \(I\).
+        \par
+        Vzemimo poljuben \(q \in I\). Po izreku o deljenju je \(q(x) = k(x) p(x) + r(x)\) za natanko določena \(k \in K[x]\) in \(r \in K[x]\), ki je strogo manjše stopnje kot \(p\). Vidimo, da je \(r(x) = q(x) - k(x) p(x) \in I\). Ker pa je \(p\) polinom najmanjše stopnje med vsemi v \(I\), mora biti \(r(x) = 0\). To pa pomeni, da je \(q(x) = k(x)p(x)\). Ideal \(I\) je torej generiran z \(p\). Sledi, da so vsi ideali v \(K[x]\) glavni.
+    \end{proof}
+
+
     Naj bo \(I \triangleleft K\) dvostranski ideal. Na \(K\) vpeljemo relacijo \(\sim\):
     \[a \sim b \Longleftrightarrow a - b \in I\]
 
@@ -576,18 +588,19 @@
     \begin{proof}
         Vemo, da je \(K / I\) obseg natanko takrat, ko nima pravih idealov. Ker nima pravih idealov, ni idealov v \(K\), ki bi vsebovali \(I\), torej je \(I\) maksimalen ideal.
     \end{proof}
+    
 
-    % \begin{theorem}
-    %     Naj bo \(R\) obseg. \(I \triangleleft R[x]\) je maksimalen natanko tedaj, ko je \(I = (p(x))\) za nek nerazcepen polinom \(p(x)\).
-    % \end{theorem}
+    \begin{theorem}
+        Naj bo \(R\) obseg. \(I \triangleleft R[x]\) je maksimalen natanko tedaj, ko je \(I = (p(x))\) za nek nerazcepen polinom \(p(x)\).
+    \end{theorem}
 
-    % \begin{proof}[Dokaz \(\implies\)]
-    %   Vzamemo \(p(x) = q(x) \cdot r(x) \in R[x]\), kjer je \(q\) nekonstanten nerazcepen polinom in \(r\) neničeln polinom. Ker je \(st p \ge st q\), je \((p) \triangleleft (q) \triangleleft R[x]\). 
-    % \end{proof}
+    \begin{proof}[Dokaz \(\implies\)]
+      Vzamemo \(p(x) = q(x) \cdot r(x) \in R[x]\), kjer je \(q\) nekonstanten nerazcepen polinom in \(r\) neničeln polinom. Ker je \(st\ p \ge st\ q\), je \((p) \triangleleft (q) \triangleleft R[x]\). 
+    \end{proof}
 
-    % \begin{proof}[Dokaz \(\Longleftarrow\)]
-    %     Naj bo \(I = (p)\) za nek nerazcepen polinom \(p \in R[x]\). Če ni maksimalen, je \((p) \triangleleft J \triangleleft R[x]\)
-    % \end{proof}
+    \begin{proof}[Dokaz \(\Longleftarrow\)]
+        Naj bo \(I = (p)\) za nek polinom \(p \in R[x]\). Če ni maksimalen, je \((p) \triangleleft J \triangleleft R[x]\). Vsi ideali v \(R[x]\) so glavni, zato je \(J = (q)\) za nek \(q \in R[x]\). Za \(q\) lahko predpostavimo, da nerazcepen. Torej je \(p(x) = q(x) \cdot r(x)\) in \(st\ q < st\ p\), torej \(r\) ni konstanten. Sledi, da je \(p\) razcepen polinom.
+    \end{proof}
 
 
     \pagebreak
@@ -595,12 +608,14 @@
 
     Obseg je komutativen kolobar, v katerem so vsi neničelni elementi obrnljivi. Stvari, ki nas zanimajo pri kolobarjih, npr. ulomki, ideali, kvocienti itd., so pri obsegih precej nezanimive. Namesto tega se bomo ukvarjali z bolj zanimivimi pojmi.
 
+    \subsubsection{Razširitve obsegov}
+
     \begin{definition}[Razširitev obsega]
         Če je \(K\) podobseg obsega \(F\), pravimo, da je \(F\) \textbf{razširitev} obsega \(K\) in pišemo \(K \le F\).
     \end{definition}
 
     \begin{proposition}
-        če je \(F\) razširitev obsega \(K\), je \(F\) vektorski prostor nad \(K\).
+        Če je \(F\) razširitev obsega \(K\), je \(F\) vektorski prostor nad \(K\).
     \end{proposition}
 
     Dimenzijo \(K\)-vektorskega prostora \(F\) \(dim_{K}F\) običajno označimo z \([F:K]\). Če je dimenzija končna, pravimo, da je \(F\) \textbf{končne razširitev}, sicer pa je \textbf{neskončna razširitev} \(K\).
@@ -651,7 +666,7 @@
 
     Zanima nas, ali je \(\phi_a\) injektiven.
     \par
-    Če je \(\phi_a\) injektiven, je \(Ker f = \{0\}\), torej \(a\) ni ničla nobenega (trivialnega) polinoma s koeficienti v \(K\). Tedaj pravimo, da je \(a\) \textbf{transcendenten} nad \(K\).
+    Če je \(\phi_a\) injektiven, je \(Ker f = \{0\}\), \(a\) ni ničla nobenega (netrivialnega) polinoma s koeficienti v \(K\). Tedaj pravimo, da je \(a\) \textbf{transcendenten} nad \(K\).
     \par
     Če pa \(\phi_a\) ni injektiven, potem obstaja netrivialen polinom s koeficienti v \(K\), v katerem je \(a\) ničla. Tedaj pravimo, da je \(a\) \textbf{algebraičen} nad \(K\).
     
@@ -659,7 +674,7 @@
         Naj bo \(F\) razširitev nad obsegom \(K\). Če so vsi elementi \(F\) algebraični nad \(K\), pravimo, da je \(F\) \textbf{algebraična razširitev} nad \(K\).
     \end{definition}
 
-    \begin{definition}
+    \begin{definition}[Transcendentna razširitev]
         Naj bo \(F\) razširitev nad obsegom \(K\). Če je vsaj eden element \(F\) transcendenten nad \(K\), je \(F\) \textbf{transcendentna razširitev} nad \(K\). 
     \end{definition}
 
@@ -670,4 +685,122 @@
     \begin{theorem}
         če je \(a\) transcendenten nad \(K \le F\), potem je \(K[a] \cong K[x]\) in \(K(a) \cong K(x)\).
     \end{theorem}
+
+    Bolj zanimive so algebraične razširitve.
+    \par
+    Če je \(a \in F\) algebraičen nad \(K\), potem je \(Ker \phi_a\) pravi ideal v \(K[x]\). V \(K[x]\) so vso ideali glavni, zato je \(Ker \phi_a = (g)\) za nek polinom \(g \in K[x]\). Če dodatno zahtevamo, da je \(g\) moničen (vodilni koeficient je 1), potem je \(g\) enolično določen in mu pravimo \textbf{minimalni polinom} za element \(a\) nad \(K\) in ga označimo z \(g_a(x)\).
+
+    \par
+    Po izreku o izomorfizmu velja
+    \[K[a] \cong K[x] / (g_a)\]
+
+    \begin{example}
+        \(\mathbb{Q}[\sqrt{2}] \cong \mathbb{Q}[x] / (x^2-2)\), ker je \(g_{\sqrt{2}}(x) = x^2-2\).
+    \end{example}
+
+    \begin{lemma}
+        Ideal \((g_a) \triangleleft K[x]\) je maksimalen.
+    \end{lemma}
+
+    \begin{proof}
+        Pokazati moramo, da je \(g_a\) nerazcepen. Če bi veljalo \(g_a(x) = p(x) \cdot q(x)\) za polinoma strogo nižje stopnje v \(K[x]\), bi iz \(0 = g_a(a) = p(a) \cdot q(a)\) dobili \(p \in Ker \phi_a\) ali \(q \in Ker \phi_a\). To je v protislovju z zahtevo, da \(g_a\) deli \(p\) in \(q\).
+    \end{proof}
+
+    \begin{corollary}
+        \(K[x] / (g_a)\) je obseg, torej \(K(a) \cong K[a]\).
+    \end{corollary}
+
+    Zato je \(K[x] / (g_a)\) vektorski prostor z bazo \(1 + (g_a), x + (g_a),..., x^{n-1} + (g_a)\), kjer je \(n\) stopnja polinoma \(g_a\). Izomorfize, \(\overline{\phi_a}\) to bazo preslika v elemente \(1,a,...,a^{n-1} \in F\).
+
+    \par
+    Ugotovitve povzemimo v naslednjem izreku.
+
+    \begin{theorem}
+        Naj bo \(a \in F\) algebraični element nad \(K \le F\)
+        \begin{enumerate}[label=\alph*)]
+            \item Obstaja natanko določen monični polinom \(g_a \in K[x]\), ki deli vse polinome, ki imajo \(a\) za ničlo.
+            \item \(K(a) \cong K[a] \cong K[x] / (g_a)\)
+            \item \([K(a) : K] = deg_{K} g_a\) je stopnja \(a\) nad \(K\) (pišemo \(deg_{K} a\)). Za bazo \(K(a)\) lahko vzamemo \(1,a,...,a^{n-1}\), kjer je \(n = deg_{K} a\).
+        \end{enumerate}    
+    \end{theorem}
+
+    \begin{corollary}
+        Če je \(F\) končna razširitev \(K\), potem za vsak \(a \in F\) velja \(deg_{K} a\ |\ [F:K]\)
+    \end{corollary}
+
+    \begin{proof}
+        Iz \(K \le K(a) \le F\) sledi \([F:K] = [F:K(a)] \cdot [K(a):K] = [F:K(a)] \cdot deg_{K} a\).
+    \end{proof}
+
+
+    Videli smo, da so vse transcendentne razširitve neskončne, enostavne algebraične razširitve pa končne. Splošne algebraične razširitve so pa lahko tudi neskončne.
+
+    \begin{theorem}
+        \(\)\par
+        \begin{enumerate}[label=\alph*)]
+            \item Vsaka končna razširitev je algebraična.
+            \item Naj bo \(K \le F\) razširitev obsega. Če je \(A \subseteq F\) podmnožica števil, ki so algebraična nad \(K\), potem je \(K(A)\) algebraična raširitev \(K\).
+            \item Če je \(F\) algebraična razširitev \(K\) in je \(E\) algebraična razširitev \(F\), potem je \(E\) algebraična razširitev \(K\).
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}[Dokaz \emph{(a)}]
+        Naj bo \([F:K]\) in \(a \in F\). Potem je množica \(\{1,a,...,a^{n}\}\) linearno odvisna, torej obstaja netrivialna \(K\)-linearna kombinacija 
+        \[k_0 1 + k_1 a + ... + k_n a^{n} = 0\]
+        Torej je \(a\) algebraičen nad \(K\).
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(b)}]
+        Vsak element \(a \in K(A)\) se da zapisati kot 
+        \[a = \frac{p(a_1,a_2,...,a_n)}{q(a_1,a_2,...,a_n)}\]
+        za primerno izbrane polinome \(p,q \in K[x_1,x_2,...,x_n]\) in \(a_1,a_2,...,a_n \in A\). To pomeni, da je \(a \in K(a_1,...,a_n)\), ki je končna razširitev \(K\). Po (1) je \(a\) algebraična nad \(K\).
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(c)}]
+        Naj bo \(a \in E\). Po privzetku obstaja \(p(x)=a_0 + a_1 x + ... + a_n x^n \in F[x]\), za katerega je \(p(a) = 0\). To pomeni, da je \(a\) algebraičen nad \(K(a_1,...,a_n)\), ki je končna algebraična razširitev \(K\). Sledi, da je tudi \(a\) algebraičen nad \(K\).
+    \end{proof}
+
+    \begin{definition}[Algebraično zaprt obseg]
+        Če dani obseg nima nobene prave algebraične razširitve oz. nad njim ni algebraičnih števil, je ta obseg \textbf{algebraično zaprt}.
+    \end{definition}
+
+    \begin{definition}[Algebraično zaprtje]
+        Najmanjša razširitev obsega \(K\), ki je algebraično zaprta, je \textbf{algebraično zaprtje} obsega \(K\).
+    \end{definition}
+    
+    \subsubsection{Razpadni obsegi}
+
+    \begin{definition}[Razpadni obseg polinoma]
+        Naj bo \(K\) obseg in \(p \in K[x]\). \textbf{Razpadni obseg polinoma} je najmanjša razširitev \(K\), ki vsebuje vse ničle polinoma \(p\).
+    \end{definition}
+
+    Privzemimo, da je \(p \in K[x]\) nerazcepen. Potem je \(K[x] / (p(x))\) razširitev, v kateri je \(a := x + (p(x))\) ničla polinoma \(p(x)\).
+    \par
+    \(p(x)\) lahko delimo z \((x-a)\) in dobimo kvocient s koeficienti v \(K[x] / (p(x))\). Postopek ponavljamo, dokler (po največ \(deg\ p\) korakih) ne dobimo razširitve \(F\), v kateri \(p(x)\) razpade na linearne faktorje. Lahko se zgodi, da smo dodali preveč ničel, zato vzamemo najmanjši podobseg \(F\), ki vsebuje \(K\) in vse ničle \(p(x)\).
+    
+    Končni rezultat je neodvisen od zaporedja razširitev, zato je razširitev enolično določena.
+    \par
+    Pokazali bomo, da vsak končni obseg dobimo kot razpadni obseg točno določenega polinoma nad \(\mathbb{Z}_p\).
+
+    \subsubsection{Končni obsegi}
+
+    Naj bo \(F\) končni obseg. Njegova karakteristika je \(p = char\ F\) in \(F\) je končno razsežni vektorski prostor nad \(\mathbb{Z}_p\). Sledi, da ima \(F\) natanko \(p^n\) elementov, kjer je \(n = [F:\mathbb{Z}_p]\).
+
+    \begin{theorem}
+        Za vsak \(n\) obstaja razširitev stopnje \(n\) obsega \(\mathbb{Z}_p\). Vsaka takšna razširitev je izomorfna razpadnemu obsegu polinoma \(x^{(p^n)} - x \in \mathbb{Z}_p[x]\).
+    \end{theorem}
+
+    \begin{proof}
+        Opazimo, da ima \(x^{(p^n)} - x\) same različne ničle. Če bi imel večkratno ničlo, potem bi imel skupnega delitelja s svojim odvodom:
+        \[(x^{(p^n)} - x)' = p^n x^{p^n - 1} - 1 \equiv -1\ (mod p)\]
+        \(x^{p^n} - x\) ima \(n\) različnih ničel. Trdimo, da te ničle tvorijo obseg. Če \(x = x^{p^n}\) in \(y = y^{p^n}\), potem očitno enako velja tudi za \(x \cdot y\) in \(x / y\). Vendat tudi \(x \pm y\) ustrezata temu pogoju, ker je \((x \pm y)^{p^n} \equiv x^{p^n} \pm y^{p^n} (mod\ p)\).
+        \par
+        Sklepamo, da množica ničel obseg in sicer ravno razpadni obseg polinoma \(x^{p^n} - x\).
+        \par
+        Obratno, če ima \(F\) \(p^n\) elementov, potem elementi \(F\) zadoščajo enačbi \(x \cdot (x^{p^n} - 1) = 0\), torej \(F\) vsebuje vse ničle \(x^{p^n} - x\) in je po izreku o enoličnosti izomorfen \(\mathbb{Z}_p (x^{p^n} - x)\).
+    \end{proof}
+
+    \begin{definition}[Galoisov obseg]
+        Končni obsegi moči \(p^n\) so \textbf{Galoisov obseg} \(GF(p^n)\).
+    \end{definition}
 \end{document}
