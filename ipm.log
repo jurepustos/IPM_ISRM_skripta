@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  29 JUN 2020 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.9)  1 JUL 2020 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,25 +316,110 @@ Overfull \hbox (28.12863pt too wide) in paragraph at lines 682--683
 \OT1/cmr/m/it/10.95 nad $\U/msb/m/n/10.95 Q$\OT1/cmr/m/it/10.95 . Na pri-mer, tran-scen-den-tnost $\OML/cmm/m/it/10.95 e$ \OT1/cmr/m/it/10.95 je bila do-ka-zana leta 1873, tran-scen-den-tnost
  []
 
+
+Overfull \hbox (3.16982pt too wide) in paragraph at lines 706--707
+[]\OT1/cmr/m/n/10.95 Pokazati mo-ramo, da je $\OML/cmm/m/it/10.95 g[]$ \OT1/cmr/m/n/10.95 ne-raz-ce-pen. []Ce bi ve-ljalo $\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )$
+ []
+
 [12]
 Overfull \hbox (13.62375pt too wide) in paragraph at lines 721--722
 []\OT1/cmr/m/it/10.95 Obstaja na-tanko dolo^^Tcen moni^^Tcni po-li-nom $\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ]$\OT1/cmr/m/it/10.95 , ki deli vse po-li-nome,
  []
 
-[13] [14] [15] (d:/Documents and projects/Latex/IPM/ipm.aux) ) 
+[13] [14] [15]
+Overfull \hbox (6.2045pt too wide) in paragraph at lines 811--811
+[]\OT1/cmr/bx/n/14.4 Topologija: zve-znost, kom-pak-tnost in po-ve-za-nost 
+ []
+
+
+Overfull \hbox (22.82346pt too wide) in paragraph at lines 814--815
+\OT1/cmr/bx/n/10.95 Definicija 2.0.1 \OT1/cmr/m/n/10.95 (To-polo^^Tska struk-tura)\OT1/cmr/bx/n/10.95 . \OT1/cmr/m/it/10.95 Naj bo $\OML/cmm/m/it/10.95 X$ \OT1/cmr/m/it/10.95 po-ljubna mno^^Tzica. \OT1/cmr/bx/it/10.95 To-polo^^Tska
+ []
+
+
+Overfull \hbox (6.15993pt too wide) in paragraph at lines 840--841
+$\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; d\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 je me-tri^^Tcni pro-stor. V me-tri^^Tcnih pro-sto-rih de-fi-ni-ramo kro-gle $\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]; r\OT1/cmr/m/n/10.95 ) =
+ []
+
+
+Overfull \hbox (2.60931pt too wide) in paragraph at lines 844--845
+\OT1/cmr/m/it/10.95 (po-se-bej sin-gle-toni) od-prte. Pra-vimo ji \OT1/cmr/bx/it/10.95 dis-kre-tna to-po-lo-gija\OT1/cmr/m/it/10.95 . Npr. obi^^Tcajna
+ []
+
+[16]
+Overfull \hbox (13.33682pt too wide) in paragraph at lines 909--910
+[]\OT1/cmr/m/n/10.95 Pri do-kazu $(3)$ $\OMS/cmsy/m/n/10.95 ([])$ $\OT1/cmr/m/n/10.95 (4)$ bomo upo-ra-bili zvezi $\OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )) \OMS/cmsy/m/n/10.95 ^^S \OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 in $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 )) =
+ []
+
+[17]
+Overfull \hbox (0.91699pt too wide) in paragraph at lines 928--929
+[][]\OT1/cmr/m/it/10.95 Ce med to-po-lo-gi-jama $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; ^^\[]\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 in $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y; ^^\[]\OT1/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 ob-staja ho-me-o-mor-fi-zem, pra-vimo,
+ []
+
+[18] [19]
+Overfull \hbox (0.39604pt too wide) in paragraph at lines 1021--1022
+\OT1/cmr/bx/n/10.95 Definicija 2.3.1. \OT1/cmr/m/it/10.95 Naj bo $\OML/cmm/m/it/10.95 X; ^^\[]$ \OT1/cmr/m/it/10.95 to-polo^^Tski pro-stor. \OT1/cmr/bx/it/10.95 Od-prto po-kri-tje \OT1/cmr/m/it/10.95 mno^^Tzice
+ []
+
+
+Overfull \hbox (0.38509pt too wide) in paragraph at lines 1034--1035
+\OT1/cmr/bx/n/10.95 Definicija 2.3.4. \OT1/cmr/m/it/10.95 Pro-stor $\OML/cmm/m/it/10.95 X$ \OT1/cmr/m/it/10.95 je \OT1/cmr/bx/it/10.95 kom-pak-tnem\OT1/cmr/m/it/10.95 , ^^Tce v vsa-kem od-pr-tem po-kri-tju
+ []
+
+
+Overfull \hbox (1.53217pt too wide) in paragraph at lines 1044--1045
+\OT1/cmr/bx/n/10.95 Trditev 2.3.6. \OT1/cmr/m/it/10.95 V me-tri^^Tcnem pro-storu je vsaka kom-pak-tna mno^^Tzica ome-jena. 
+ []
+
+[20]
+Overfull \hbox (11.28407pt too wide) in paragraph at lines 1092--1093
+[]\OT1/cmr/m/n/10.95 Ker je $\OML/cmm/m/it/10.95 X$ \OT1/cmr/m/n/10.95 kom-pak-tna, lahko v $\U/rsfs/m/n/10.95 U$ \OT1/cmr/m/n/10.95 naj-demo kon^^Tcno pod-po-kri-tje $\OML/cmm/m/it/10.95 U[]; ::; U[]; X \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (11.65884pt too wide) in paragraph at lines 1111--1112
+[]\OT1/cmr/m/n/10.95 Ker je $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 tudi za-prta in je pod-mno^^Tzica kom-pak-tne mno^^Tzice, je $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 kom-pak-tna.
+ []
+
+
+Overfull \hbox (12.69351pt too wide) in paragraph at lines 1116--1117
+\OT1/cmr/bx/n/10.95 Izrek 2.3.13. \OT1/cmr/m/it/10.95 V kom-pak-tnem pro-storu ima vsaka ne-skon^^Tcna mno^^Tzica ste-kali^^Ts^^Tce
+ []
+
+[21]
+Overfull \hbox (36.80922pt too wide) in paragraph at lines 1147--1148
+[]$\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$ je kom-pak-tna, to-rej je ome-jena in za-prta. To-rej ob-staja $\OML/cmm/m/it/10.95 inf\OMS/cmsy/m/n/10.95 f \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (4.64832pt too wide) in paragraph at lines 1159--1160
+\OT1/cmr/m/it/10.95 za-pr-tih pod-mno^^Tzic, ki ima pra-zen pre-sek, ob-staja kon^^Tcna pod-dru^^Tzina s pra-znim
+ []
+
+[22] [23]
+Overfull \hbox (32.27559pt too wide) detected at line 1266
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 kx\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 dx \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 a[] [][] sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 kx\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 dx \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ::: \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 a[] [][] sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 nx\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 kx\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 dx \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 a[]^^Y
+ []
+
+[24]
+Overfull \hbox (12.72023pt too wide) in paragraph at lines 1299--1300
+[]\OT1/cmr/m/n/10.95 Funkcije $\OML/cmm/m/it/10.95 cos\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 kx\OT1/cmr/m/n/10.95 )$ in $\OML/cmm/m/it/10.95 sin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 kx\OT1/cmr/m/n/10.95 )$ so ab-so-lu-tno ome-jene z 1, zato je za kon-ver-genco
+ []
+
+[25] [26] [27] [28] (d:/Documents and projects/Latex/IPM/ipm.aux) ) 
 Here is how much of TeX's memory you used:
- 5221 strings out of 480478
- 78680 string characters out of 5903486
+ 5222 strings out of 480478
+ 78698 string characters out of 5903486
  341986 words of memory out of 5000000
- 21191 multiletter control sequences out of 15000+600000
+ 21192 multiletter control sequences out of 15000+600000
  541755 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,497b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "d:/Documents and projects/Latex/IPM/ipm.pdf" (15 pages, 236984 bytes).
+ 38i,14n,43p,622b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on "d:/Documents and projects/Latex/IPM/ipm.pdf" (28 pages, 301459 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

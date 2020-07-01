@@ -683,12 +683,12 @@
     \end{remark}
 
     \begin{theorem}
-        če je \(a\) transcendenten nad \(K \le F\), potem je \(K[a] \cong K[x]\) in \(K(a) \cong K(x)\).
+        Če je \(a\) transcendenten nad \(K \le F\), potem je \(K[a] \cong K[x]\) in \(K(a) \cong K(x)\).
     \end{theorem}
 
     Bolj zanimive so algebraične razširitve.
     \par
-    Če je \(a \in F\) algebraičen nad \(K\), potem je \(Ker \phi_a\) pravi ideal v \(K[x]\). V \(K[x]\) so vso ideali glavni, zato je \(Ker \phi_a = (g)\) za nek polinom \(g \in K[x]\). Če dodatno zahtevamo, da je \(g\) moničen (vodilni koeficient je 1), potem je \(g\) enolično določen in mu pravimo \textbf{minimalni polinom} za element \(a\) nad \(K\) in ga označimo z \(g_a(x)\).
+    Če je \(a \in F\) algebraičen nad \(K\), potem je \(Ker\ \phi_a\) pravi ideal v \(K[x]\). V \(K[x]\) so vso ideali glavni, zato je \(Ker\ \phi_a = (g)\) za nek polinom \(g \in K[x]\). Če dodatno zahtevamo, da je \(g\) moničen (vodilni koeficient je 1), potem je \(g\) enolično določen in mu pravimo \textbf{minimalni polinom} za element \(a\) nad \(K\) in ga označimo z \(g_a(x)\).
 
     \par
     Po izreku o izomorfizmu velja
@@ -703,14 +703,14 @@
     \end{lemma}
 
     \begin{proof}
-        Pokazati moramo, da je \(g_a\) nerazcepen. Če bi veljalo \(g_a(x) = p(x) \cdot q(x)\) za polinoma strogo nižje stopnje v \(K[x]\), bi iz \(0 = g_a(a) = p(a) \cdot q(a)\) dobili \(p \in Ker \phi_a\) ali \(q \in Ker \phi_a\). To je v protislovju z zahtevo, da \(g_a\) deli \(p\) in \(q\).
+        Pokazati moramo, da je \(g_a\) nerazcepen. Če bi veljalo \(g_a(x) = p(x) q(x)\) za polinoma strogo nižje stopnje v \(K[x]\), bi iz \(0 = g_a(a) = p(a) q(a)\) dobili \(p \in Ker\ \phi_a\) ali \(q \in Ker\ \phi_a\). Ampak \(Ker\ phi_a = (g_a)\), zato je \(g_a\) polinom najmanjše stopnje v \(Ker\ \phi_a\). Ker sta \(p\) in \(q\) strogo manjše stopnje kot \(g_a\), ne moreta biti elementa \(Ker\ \phi_a\). Prišli smo do protislovja, torej je \(g_a\) nerazcepen. 
     \end{proof}
 
     \begin{corollary}
         \(K[x] / (g_a)\) je obseg, torej \(K(a) \cong K[a]\).
     \end{corollary}
 
-    Zato je \(K[x] / (g_a)\) vektorski prostor z bazo \(1 + (g_a), x + (g_a),..., x^{n-1} + (g_a)\), kjer je \(n\) stopnja polinoma \(g_a\). Izomorfize, \(\overline{\phi_a}\) to bazo preslika v elemente \(1,a,...,a^{n-1} \in F\).
+    Zato je \(K[x] / (g_a)\) vektorski prostor z bazo \(1 + (g_a), x + (g_a),..., x^{n-1} + (g_a)\), kjer je \(n\) stopnja polinoma \(g_a\). Po izreku o izomorfizmu imamo izomorfizem \(\overline{\phi_a}\). Ta preslika bazo v elemente \(1,a,...,a^{n-1} \in F\).
 
     \par
     Ugotovitve povzemimo v naslednjem izreku.
@@ -720,16 +720,16 @@
         \begin{enumerate}[label=\alph*)]
             \item Obstaja natanko določen monični polinom \(g_a \in K[x]\), ki deli vse polinome, ki imajo \(a\) za ničlo.
             \item \(K(a) \cong K[a] \cong K[x] / (g_a)\)
-            \item \([K(a) : K] = deg_{K} g_a\) je stopnja \(a\) nad \(K\) (pišemo \(deg_{K} a\)). Za bazo \(K(a)\) lahko vzamemo \(1,a,...,a^{n-1}\), kjer je \(n = deg_{K} a\).
+            \item \([K(a) : K] = deg\ g_a\) je stopnja \(a\) nad \(K\) (pišemo \(deg_{K}\ a\)). Za bazo \(K(a)\) lahko vzamemo \(1,a,...,a^{n-1}\), kjer je \(n = deg_{K}\ a\).
         \end{enumerate}    
     \end{theorem}
 
     \begin{corollary}
-        Če je \(F\) končna razširitev \(K\), potem za vsak \(a \in F\) velja \(deg_{K} a\ |\ [F:K]\)
+        Če je \(F\) končna razširitev \(K\), potem za vsak \(a \in F\) velja \(deg_{K}\ a\ |\ [F:K]\)
     \end{corollary}
 
     \begin{proof}
-        Iz \(K \le K(a) \le F\) sledi \([F:K] = [F:K(a)] \cdot [K(a):K] = [F:K(a)] \cdot deg_{K} a\).
+        Iz \(K \le K(a) \le F\) sledi \([F:K] = [F:K(a)] \cdot [K(a):K] = [F:K(a)] \cdot deg_{K}\ a\).
     \end{proof}
 
 
@@ -793,7 +793,7 @@
     \begin{proof}
         Opazimo, da ima \(x^{(p^n)} - x\) same različne ničle. Če bi imel večkratno ničlo, potem bi imel skupnega delitelja s svojim odvodom:
         \[(x^{(p^n)} - x)' = p^n x^{p^n - 1} - 1 \equiv -1\ (mod p)\]
-        \(x^{p^n} - x\) ima \(n\) različnih ničel. Trdimo, da te ničle tvorijo obseg. Če \(x = x^{p^n}\) in \(y = y^{p^n}\), potem očitno enako velja tudi za \(x \cdot y\) in \(x / y\). Vendat tudi \(x \pm y\) ustrezata temu pogoju, ker je \((x \pm y)^{p^n} \equiv x^{p^n} \pm y^{p^n} (mod\ p)\).
+        \(x^{p^n} - x\) ima \(n\) različnih ničel. Trdimo, da te ničle tvorijo obseg. Če \(x = x^{p^n}\) in \(y = y^{p^n}\), potem očitno enako velja tudi za \(x \cdot y\) in \(x / y\). Vendar tudi \(x \pm y\) ustrezata temu pogoju, ker je \((x \pm y)^{p^n} \equiv x^{p^n} \pm y^{p^n} (mod\ p)\).
         \par
         Sklepamo, da množica ničel obseg in sicer ravno razpadni obseg polinoma \(x^{p^n} - x\).
         \par
@@ -803,4 +803,597 @@
     \begin{definition}[Galoisov obseg]
         Končni obsegi moči \(p^n\) so \textbf{Galoisov obseg} \(GF(p^n)\).
     \end{definition}
+
+
+
+
+    \pagebreak
+    \section{Topologija: zveznost, kompaktnost in povezanost}
+
+    \begin{definition}[Topološka struktura]
+        Naj bo \(X\) poljubna množica. \textbf{Topološka struktura} ali krajše \textbf{topologija} na \(X\) je podana z množičo odprtih okolic, tj. družino \(\tau\) podmnožic \(X\), ki zadoščajo pogojema:
+        \begin{enumerate}[label=(T\arabic*)]
+            \item Poljubna unija množic iz \(\tau\) je v \(\tau\).
+            \item Končen presek množic iz \(\tau\) je v \(\tau\). 
+        \end{enumerate}
+
+        Na kratko: \(\tau\) je zaprta za unije in končne preseke.
+    \end{definition}
+
+    Zakaj omejitev na končne preseke? Ob neskočnem preseku se lahko zgodi, da je zaprt.
+    \[ \bigcup_{n=1}^{\infty}\ (-\frac{1}{n},\ \frac{1}{n}) = [0,1] \]
+
+    Zahtevo \((T2)\) lahko poenostavimo: \(U,V \in \tau \implies U \cap V \in \tau\).
+    
+    \par
+    Unija prazne družine je prazna, presek prazne družine pa cel \(X\), zato pogosto navedemo zahtevo \((T3)\ \emptyset, X \in \tau\).
+
+    \begin{example}
+        Pri analizi smo za podmnožico \(U \subseteq \mathbb{R}\) (oz. \(\mathbb{R}^n\)) rekli, da je odprta, če so vse njene točke notranje. Točka \(u \in U\) je notranja, če \(U\) vsebuje interval (ali kroglo) okoli točke \(u\). Ni se težko prepričati, da družina odprtih podmnožic \(\mathbb{R}\) (oz. \(\mathbb{R}^n\)) podaja topološko strukturo.
+    \end{example}
+
+    \begin{example}
+        Za množico \(X\) definiramo funkcijo razdalje (metriko) 
+        \begin{center}
+            \(d\): \(X \times X \to [0, \infty)\)
+        \end{center} 
+        \((X,d)\) je metrični prostor. V metričnih prostorih definiramo krogle \(K(x_0,r)=\{\ x \in X\ |\ d(x_0,x) < r\ \}\), notranje točke in odprte množice opredelimo kot pri \(\mathbb{R}^n\). Tedaj je družina odprtih podmnožic topologija na \(X\). Pravimo ji \textbf{topologija porojena z metriko \(d\)} in jo včasih označimo z \(\tau_d\).
+    \end{example}
+
+    \begin{example}
+        \(\tau=\{\ \emptyset, X\ \}\) je topologija na \(X\). Pravimo ji \textbf{trivialna topologija}. Nasprotna skrajnost je topologija, v katerem so vse množice (posebej singletoni) odprte. Pravimo ji \textbf{diskretna topologija}. Npr. običajna razdalja med točkami \(\mathbb{N}\) porodi diskretno topologijo.
+    \end{example}
+
+    \begin{definition}[Metrizabilna topologija]
+        Topologija, porojene z metriko so \textbf{metrizabilne}. 
+    \end{definition}
+    Različne metrike pogosto porodijo isto topologijo, tj. isti pojem bližine.
+
+    \par
+    Komplementi odprtih množic so zaprte množice. Družina zaprtih množic 
+    \[\mathscr{Z}=\{\ U^\complement\ |\ U \in \tau \}\]
+    je zaprta za poljubne preseke in končne unije. Velja tudi \(\emptyset, X \in \mathscr{Z}\).
+
+    \begin{definition}[Notranjost, zaprtje in rob množice]
+        \(\)\par
+        \begin{enumerate}[label=\arabic*)]
+            \item Notranjost \(A\): \(Int A = \mathring{A} = \bigcup\ \{\ U \in \tau\ |\ U \subseteq A\ \}\) je največja odprta množica, vsebovana v \(A\).
+            \item Zaprtje \(A\): \(Cl A = \overline{A} = \bigcap\ \{\ F \in \mathscr{Z}\ |\ F \supseteq A \}\) je najmanjša zaprta množica, ki vsebuje \(A\).
+            \item Rob \(A\): \(Fr A = \dot{A} = Cl A - Int A\).
+        \end{enumerate}
+    \end{definition}
+
+
+    \subsection{Zveznost}
+
+    Po običajni intuiciji je funkcije zvezna, če slika točke, ki so si blizu, v točke, ki so si blizu.
+
+    \begin{definition}
+        Funkcija \(f\): \((X,\tau_X) \to (Y,\tau_Y)\) je zvezna, če za vsak \(V \in \tau_Y\) velja \(f^{-1}(V) \in \tau_X\).
+    \end{definition}
+
+    V metričnih prostorih se definicija ujema z običajno definicijo zveznosti, vendar je veliko preprostejša.
+
+    \begin{theorem}
+        Kompozitum zveznih funkcij je zvezna funkcija.
+    \end{theorem}
+
+    \begin{proof}
+        Naj bosta \(f\): \((X,\tau_X) \to (Y,\tau_Y)\) in \(g\): \((Y,\tau_Y) \to (Z,\tau_Z)\) zvezni funkciji. Če je \(W \in \tau_Z\), je \(g^{-1}(W) \in \tau_Y\). Potem je tudi \(f^{-1}(g^{-1}(W)) = (gf)^{-1}(W) \in \tau_X\). Torej je \(g \circ f\) zvezna.
+    \end{proof}
+
+    Naslednji izrek je uporabna karakterizacija zveznosti:
+    \begin{theorem}
+        Naslednje trditve so ekvivalentne:
+        \begin{enumerate}[label=\arabic*)]
+            \item \(f\): \(X \to Y\) je zvezna.
+            \item Za vsako odprto \(V \subseteq Y\) je \(f^{-1}(V)\) odprta v \(X\).
+            \item Za vsako zaprto \(A \subseteq Y\) je \(f^{-1}(A)\) zaprto v \(X\).
+            \item Za vsak \(A \subseteq X\) je \(f(\overline{A}) \subseteq \overline{f(A)}\).
+        \end{enumerate}
+    \end{theorem}
+
+    \begin{proof}[Dokaz \emph{(1)} \(\Longleftrightarrow\) \emph{(2)}]
+        je definicija zveznosti.
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(2)} \(\Longleftrightarrow\) \emph{(2)}]
+        \(f^{-1}(A^\complement) = (f^{-1}(A))^\complement\).    
+    \end{proof}
+
+    Zaprtje \(\overline{A}\) si predstavljamo kot točke \(X\), ki so tako blizu, da jih topologija ne loči od \(A\).
+    \par
+    \((4)\) preberemo kot "zveznost pomeni, da se točke, ki so blizu A, preslikajo v točke, ki so blizu \(f(A)\)."
+
+    \par
+    Pri dokazu \((3)\) \(\Longleftrightarrow\) \((4)\) bomo uporabili zvezi \(f^{-1}(f (A)) \supseteq A\) in \(f(f^{-1} (B)) = B\).
+
+    \begin{proof}[Dokaz \emph{(3)} \(\implies\) \emph{(4)}]
+        Naj bo \(A \subseteq X\). \(A \subseteq f^{-1}(f (A)) \subseteq f^{-1}( \overline{f(A)}) \). \(\overline{f(A)}\) je zaprtje \(f(A)\), torej je zaprta. Zaradi \((3)\) je tudi \(f^{-1}(\overline{f(A)})\) zaprta. Sledi \(\overline{A} \subseteq f^{-1} (\overline{f(A)}) \). Iz tega sledi \(f(\overline{A}) \subseteq \overline{f(A)}\). 
+        
+    \end{proof}
+
+    \begin{proof}[Dokaz \emph{(4)} \(\implies\) \emph{(3)}]
+        Vzemimo zaprto množico \(B \subseteq Y\). Velja \(B = \overline{B} = \overline{f(f^{-1}(B))}\). Po \((3)\) je \(\overline{f(f^{-1}(B))} \subseteq f(\overline{f^{-1}(B)})\). Iz tega sledi \(\overline{f^{-1}(B)} \subseteq f^{-1}(B)\). To je mogoče je, če je \(\overline{f^{-1}(B)} = f^{-1}(B)\), torej je \(f^{-1}(B)\) zaprta.
+    \end{proof}
+
+    \subsection{Homeomorfizmi}
+
+    Zvezne funkcije so analogne homomorfizmom med grupami ali kolobarji. Izomorfizmi so bijektivni homomorfizmi, ki ponavadi kažejo kongruenco oz. enakost dveh struktur. V topologiji pa bijektivnost ni dovolj - za zvezno bijektivno funkcijo \(f\) ni nujno, da je \(f^{-1}\) tudi zvezna. Zato zahtevamo, da je \(f^{-1}\) zvezna in v izogib dvoumnosti uvedemo nov pojem.
+    
+    \begin{definition}[Homeomorfizem]
+        Naj bo \(f\): \(X \to Y\) bijektivna zvezna funkcija med topologijama. Če je \(f^{-1}\) tudi zvezna, je \(f\) \textbf{Homeomorfizem}.
+
+        \par
+        Če med topologijama \((X,\tau_X)\) in \((Y,\tau_Y)\) obstaja homeomorfizem, pravimo, da sta \textbf{homeomorfna} in zapišemo \((X,\tau_X) \approx (Y,\tau_Y)\) oz. \(X \approx Y\).
+    \end{definition}
+
+    \begin{example}
+        \([a,b] \approx [c,d]\):
+        \[y = \frac{d - c}{b - a} (x-a) + c\]
+        Funkcija je linearna, torej zvezna. Inverz je tudi linearen, zato tudi zvezen. Podobno je tudi \((a,b) \approx (c,d)\) in \([a,b) \approx [c,d)\).
+    \end{example}
+
+    \begin{example}
+        \((0,1) \approx \mathbb{R} \):
+        \begin{center}
+            \(\tan\): \((-\frac{\pi}{2},\frac{\pi}{2}) \to \mathbb{R}\) zvezna, bijektivna
+        \end{center}
+        Inverz je \(\arctan\), ki je tudi zvezen. Komponiramo z \((0,1) \approx (-\frac{\pi}{2},\frac{\pi}{2})\).
+        \par
+        Pogosto uporabimo tudi sledeči homeomorfizem \((-1,1) \approx \mathbb{R}\):
+        \begin{center}
+            \(f(x) = \frac{x}{\sqrt{1-x^2}}\) in njegov inverz \(g(x) = \frac{x}{\sqrt{1+x^2}}\)
+        \end{center}
+        Prednost tega homeomorfizma je, da ga z lahkoto razširimo na več dimenzij:
+        \begin{center}
+            \(B^n =\) enotska krogla v \(\mathbb{R}^n\) \\
+            \(f(\vec{x}) = \frac{\vec{x}}{\sqrt{1 - \parallel x \parallel^2}}\) \\
+            \(g(\vec{x}) = \frac{\vec{x}}{\sqrt{1 + \parallel x \parallel^2}}\)
+        \end{center}
+    \end{example}
+
+    \begin{example}
+        Rob enotske krogle \(B^n\) je enotska sfera 
+        \[S^{n-1} = \{\ x \in \mathbb{R}^n\ |\ \parallel x \parallel\ = 1\ \}\]
+        Poiščimo homeomorfizem \(S^1 - \{\ (0,1)\ \} \approx \mathbb{R}\).
+
+        \par
+        Ideja: krožnico brez vrhnje točke projeciramo na abscisno os.
+        \[(x,y) \mapsto (u,0)\]
+        Kako dobimo \(u\)? 
+        \par
+        Vzamemo \(x,y \in S^1\): \((0,1), (x,y),(u,0)\) kolinearne, zato je \(\frac{x-0}{y-1} = \frac{u}{-1}\), torej \(u = \frac{x}{1-y}\).
+        \begin{center}
+            \(f(x,y) = \frac{x}{1 - y}\) zvezna za \(y \neq 1\)
+        \end{center}
+        Inverz: premica skozi \((0,1)\) in \((u,0)\) seka krožnico v \(x,y\):
+        \[\frac{x}{u} + y = 1\]
+        \[x^2 + y^2 = 1\]
+
+        Iz tega dobimo:
+        \[y = 1 - \frac{x}{u}\]
+        \[x^2 + (1 - \frac{x}{u})^2 = 1\]
+        \[x^2 (1 + \frac{1}{u^2}) = \frac{2x}{u}\]
+
+        Iz zadnje enačbe sledi:
+        \[x = \frac{2}{u(1+\frac{1}{u^2})} = \frac{2u}{u^2 + 1}\]
+        \[y = \frac{u^2 - 1}{u^2 + 1}\]
+
+        Inverz \(f\) je torej:
+        \[g(u) = (\frac{2u}{u^2 + 1}, \frac{u^2 - 1}{u^2 + 1})\]
+
+        Tudi tu imamo posplošitev na višje dimenzije:
+        \[S^n - \{\ (0,0,...,1)\ \} \xleftrightharpoons[g]{f} \mathbb{R}\]
+        \[f(x_1,x_2,...,x_{n+1}) := \frac{1}{1-x_{n-1}} (x_1,...,x_n)\]
+        \[f(\vec{x}, y) = \frac{\vec{x}}{1-y}\]
+        \[g(\vec{x}) = (\frac{2\vec{x}}{\parallel \vec{x} \parallel^2 + 1}, \frac{\parallel \vec{x} \parallel^2 - 1}{\parallel \vec{x} \parallel^2 + 1})\]
+
+        Preslikavi \(f\) pravimo \textbf{stereografska projekcija}. Posebno pomembna je za \(n=2\): tedaj dobimo \(S^2 \approx \mathbb{C} \cup \{ \infty \}\)
+    \end{example}
+
+    Računanje inverzov je velikokrat nepraktično. Na srečo lahko pokažemo, da je zvezna \(f\) homeomorfizem, brez da bi se sklicevali na konkreten \(f^{-1}\).
+
+    \begin{definition}
+        Zvezna funkcija \(f\) je \textbf{odprta}, če je slika vsake odprte množice odprta.
+        \par
+        Zvezna funkcija \(f\) je \textbf{zaprta}, če je slika vsake zaprte množice zaprta.
+    \end{definition}
+
+    \(f^{-1}\ je\ zvezna\ \Longleftrightarrow\) \((U^{odprta} \subseteq X \implies (f^{-1})^{-1} (U) = f(U)\ odprta\ v\ Y)\).
+    \par
+    \(f^{-1}\ je\ zvezna\ \Longleftrightarrow\) \((A^{zaprta} \subseteq X \implies f(A)\ zaprta\ v\ Y)\).
+
+    
+    \begin{theorem}
+        Naslednje trditve so ekvivalentne:
+        \begin{enumerate}[label=(\arabic*)]
+            \item \(f\): \(X \to Y\) je homeomorfizem.
+            \item \(f\): \(X \to Y\) je zvezna bijekcija in \(f^{-1}\) je zvezna.
+            \item \(f\): \(X \to Y\) je zvezna, odprta bijekcija.
+            \item \(f\): \(X \to Y\) je zvezna, zaprta bijekcija.
+        \end{enumerate}
+    \end{theorem}
+
+    \subsection{Kompaktnost}
+
+    \begin{definition}
+        Naj bo \(X,\tau_X\) topološki prostor. \textbf{Odprto pokritje} množice \(X\) je družina \(\mathscr{U} \in \tau\), katere unija je celoten \(X\).
+    \end{definition}
+
+    \begin{example}
+        Pokritje \(\mathbb{R}\) z odprtimi intervali.
+    \end{example}
+
+    \begin{example}
+        Pokritje \(\mathbb{R}^2\) s pravokotniki \((a,b) \times *(c,d)\)
+    \end{example}
+
+
+    \begin{definition}
+        Prostor \(X\) je \textbf{kompaktnem}, če v vsakem odprtem pokritju obstaja končo podpokritje (tj. končna poddružina, ki tudi pokrije \(X\)).
+    \end{definition}
+
+    Malo splošneje, \(A \subseteq X\) je kompakten, če za vsako odprto pokritje \(A\) končno podpokritje.
+
+    \begin{example}
+        Vsaka končna množica je kompaktna.
+    \end{example}
+
+    \begin{proposition}
+        V metričnem prostoru je vsaka kompaktna množica omejena.
+    \end{proposition}
+
+    \begin{proof}
+        Naj bo \(X\) metrični prostor.
+        \[X \subseteq K(x_0,1) \cup K(x_0,2) \cup ... \]
+        Kompaktnost pomeni, da je \(X\) pokrit z nekim končnim naborom krogel. Ker so vse krogle omejene, je tudi \(X\) omejen. 
+    \end{proof}
+
+    \begin{example}
+        \((0,1)\) \underline{ni} kompakten.
+        \par
+        To je zato, ker \(\{\ (\frac{1}{n},1)\ |\ n=2,3,...\ \}\) nima končnega podpokritja.
+        \par
+        Alternativno: kompaktnost je topološka lastnost in \((0,1) \approx \mathbb{R}\), ki je neomejen, torej nekompakten.
+        \par
+        Podobno tudi \([0,1) \approx [0,\infty)\) ni kompakten.
+    \end{example}
+
+    \begin{theorem}
+        Interval \([a,b]\) je kompakten.
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(\mathscr{U}\) odprto pokritje za \([a,b]\).
+        \par
+        \(\ \{\ x\ |\ [a,x]\) je pokrit s končno mnogo množicami v \(\mathscr{U}\ \} \supseteq [a,b]\) ima supremum \(c\).
+        \par
+        Recimo, da je \(c < b\). \(c \in U \in \mathscr{U}\). Obstaja takšen \(c' \le c\), da je \([a,c']\) pokrit z množicami \(U_1,...U_n\). Ampak potem je tudi \((U_1 \cup ... \cup U_n) \cup U\) pokrit s končno množicami v \(\mathscr{U}\), zato \(c\) ne more biti supremum. Torej je \(c = b\).
+    \end{proof}
+
+    \begin{theorem}
+        V metričnem prostoru je vsaka kompaktna množica zaprta.
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(K\) kompaktna podmnožica metričnega prostora in \(x_0 \notin K\). Pokazati moramo, da je \(x_0\) zunanja točka za \(K\), tj. ima okolico, ki ne seka \(K\), oziroma za vsak \(x \in K\) obstaja dovolj majhen \(r_x \ge 0\), da se \(K(x,r_x)\) in \(K(x_o,r_x)\) ne sekata.
+        \par
+        Ekvivalentno, moramo pokazati, da je \(\displaystyle K \subseteq \bigcup_{x \in K} K(x,r_x)\), ki ne seka \(\displaystyle \bigcap_{x \in K} K(x_o,r_x)\). Vendar \(\displaystyle \bigcap_{x \in K} K(x_o,r_x)\) ni nujno odprta. Ker je \(K\) kompakten, lahko najdemo takšne \(x_1,...,x_n \in K\), da \(K \subseteq K(x_1,r_{x_1}) \cup ... \cup K(x_n,r_{x_n})\), ki ne seka \(K(x_o,r_{x_1}) \cap ... \cap K(x_0,r_{x_n})\), saj smo izbrali takšne \(r_{x_i}\), da se \(K(x_i,r_{x_i})\) in \(K(x_o,r_{x_i})\) ne sekata. To je odprta okolica \(x_0\), ki ne seka \(K\).
+    \end{proof}
+
+    \begin{theorem}
+        Naj bo \(X\) kompaktna množica in \(A \subseteq X\) zaprta. Potem je tudi \(A\) kompaktna. 
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(\mathscr{U}\) odprto pokritje \(A\). \(\mathscr{U} \cup \{\ X - A\ \}\) je potem odprto pokritje \(X\).
+        \par
+        Ker je \(X\) kompaktna, lahko v \(\mathscr{U}\) najdemo končno podpokritje \(U_1,..,U_n,X-A\) za \(X\). Če iz tega pokritja vzamemo izpustimo \(X-A\), dobimo končno podpokritje za \(A\).
+    \end{proof}
+
+    Naslednji izrek je podan brez dokaza. Potrebovali ga bomo za izrek, ki sledi. 
+    \begin{theorem}
+        Če so \(X_1,...,X_n\) kompaktne, je \(X_1 \times ... \times X_n\) kompakten.
+    \end{theorem}
+
+    \begin{theorem}[Heine-Borelov izrek]
+        \(A \subseteq \mathbb{R}^n\) je kompaktna natanko takrat, ko je zaprta in omejena.
+    \end{theorem}
+
+    \begin{proof}[Dokaz \(\implies\)]
+        Smo že.
+    \end{proof}
+
+    \begin{proof}[Dokaz \(\Longleftarrow\)]
+        Ker je \(A\) omejena, je \(A \subseteq [a_1,b_1] \times ... \times [a_n, b_n]\) za dovolj velik kompakten kvader (kompakten je, ker je kartezični produkt zaprtih intervalov, za katere vemo, da so kompaktni).
+        \par
+        Ker je \(A\) tudi zaprta in je podmnožica kompaktne množice, je \(A\) kompaktna. 
+    \end{proof}
+
+
+    \begin{theorem}
+        V kompaktnem prostoru ima vsaka neskončna množica stekališče (tj. obstaja takšna točka \(a\), da ima vsaka njena okolica neskončno točk).
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(A \in K\) neskončna množica v kompaktnem prostoru. Denimo, da \(A\) nima stekališča. Potem ima vsak \(x \in X\) okolico \(U_x\), ki vsebuje le končno mnogo elementov \(A\). 
+        \par
+        \(\{\ U_x\ |\ x \in X\ \}\) je odprto pokritje za \(X\). Ker je \(X\) kompakten, obstaja končno podpokritje \(U_1,...,U_n\), ki pokrije \(X\), torej je \(A \subseteq U_1 \cup ... \cup U_n\). Sledi, da je \(A\) kompaktna.
+    \end{proof}
+
+    \begin{corollary}[Bolzano-Weierstrass]
+        Vsako omejeno zaporedje v \(\mathbb{R}^n\) ima konvergentno podzaporedje.
+    \end{corollary}
+
+    \begin{proof}
+        Naj bo \(\{\ x_i\ \}\) omejeno zaporedje v nekem kompaktnem kvadru. Potem ima \(\{\ x_i\ \}\) stekališče \(s\). Če vzamemo točke zaporedje, ki gredo proti \(s\). To podzaporedje je očitno konvergentno.
+    \end{proof}
+
+
+    \begin{theorem}
+        Naj bo \(f\): \(X \to Y\) zvezna funkcija in \(A \subseteq X\) kompaktna podmnožica. Potem je \(f(A) \subseteq Y\) kompaktna.
+    \end{theorem}
+
+    \begin{proof}
+        Naj bo \(\mathscr{U}\) odprto pokritje \(f(A)\). Potem je \(\{\ f^{-1}(U)\ |\ U \in \mathscr{U}\ \}\) odprto pokritje za \(A\). Ker je \(A\) kompaktna, obstaja končno podpokritje \(f^{-1}(U_1),...,f^{-1}(U_n)\) za \(A\). Torej je \(U_1,...,U_n\) končno pokritje za \(f(A)\). \(f(A)\) je torej kompaktna.
+    \end{proof}
+
+    \begin{corollary}
+        Naj bo \(X\) kompakten prostor. Potem vsaka zvezna \(f\): \(X \to \mathbb{R}\) zavzame svoj minimum in maksimum.
+    \end{corollary}
+
+    \begin{proof}
+        \(f(X)\) je kompaktna, torej je omejena in zaprta. Torej obstaja \(inf \{\ f(x)\ |\ x \in X\ \}\), ki je v \(f(X)\), torej \(f\) zavzema minimum. Analogno za maksimum.
+    \end{proof}
+
+    Opis kompaktnosti z zaprtimi množicami:
+    \begin{center}
+        \(\mathscr{U}\) odprto pokritje, \(\displaystyle \bigcup_{U_\lambda \in \mathscr{U}} U_\lambda = X\) \(\longleftrightarrow\) \(\{\ U_\lambda^\complement\ |\ U_\lambda \in \mathscr{U} \}\) zaprte, \(\displaystyle \bigcap_{U_\lambda \in \mathscr{U}} U_\lambda^\complement = \emptyset\)
+    \end{center}
+    \begin{center}
+        \(X = U_1 \cup ... \cup U_n \Longleftrightarrow U_1^\complement \cap ... \cap U_n^\complement = \emptyset\)
+    \end{center}
+
+    \begin{theorem}
+        Prostor \(X\) je kompakten natanko tedaj, ko v vsaki družini zaprtih podmnožic, ki ima prazen presek, obstaja končna poddružina s praznim presekom.
+    \end{theorem}
+
+    \begin{corollary}[Cantorjev izrek o sendviču]
+        \([a_1,b_1] \supseteq [a_2,b_2] \supseteq ...\), presek je neprazen.
+    \end{corollary}
+
+
+    \subsection{Povezanost}
+
+    \begin{definition}[Separacija, povezana množica]
+        \textbf{Separacija} množice \(X\) je razdelitev \(X = A \cup B\) na dve neprazni odprti disjunktni množici. Množica \(X\) je \textbf{povezana}, če nima separacije, sicer je \textbf{nepovezana}.
+    \end{definition}
+
+    Alternativni karakterizaciji:
+    \begin{enumerate}[label=(\arabic*)]
+        \item \(X\) ni mogoče zapreti kot unijo dveh zaprtih disjunktnih množic.
+        \item V \(X\) ne obstaja \(A \neq \emptyset, X\), ki je hkrati odprta in zaprta.
+    \end{enumerate}
+
+    \begin{theorem}
+        Povezane množice v \(\mathbb{R}\) so natanko intervali.
+    \end{theorem}
+
+    Opis intervala ne glede na to, ali vsebuje krajišča:
+    \par
+    \(I\) je interval, če iz \(a,b \in I\) in \(a < c < b\) sledi \(c \in I\).
+    \begin{proof}[Dokaz \(\implies\)]
+        Če \(I \subseteq \mathbb{R}\) ni interval, potem obstajajo \(a < c < b\), da velja \(a,b \in I\) in \(c \notin I\). Tedaj je \((- \infty, c) \cap I, (c, + \infty) \cap I)\) separacija \(I\), torej ni povezana. 
+    \end{proof}
+
+    \begin{proof}[Dokaz \(\Longleftarrow\)]
+        Če interval \(I\) ni povezan, potem obstaja separacija \(I = A \cup B\), \(A,B\) odprti in neprazni. Vzamemo takšna \(a \in A\) in \(b \in B\), da je \(a < b\) (sicer zamenjamo \(A\) in \(B\)). Naj bo \(c := sup\{\ x\ |\ [a,x) \subseteq A\ \}\).
+        \par
+        Očitno je \(a \le c \le b\), torej je \(c \in I\). Poleg tega vsaka okolica \(c\) seka tako \(A\) kot \(B\), zato \(c\) ni notranja v nobeni, zato \(c \notin A\) in \(c \notin B\). Protislovje.
+    \end{proof}
+
+    
+    \begin{theorem}
+        Naj bo \(f\): \(X \to Y\) zvezna funkcija. Če je \(X\) povezana, je tudi \(f(X)\) povezana.
+    \end{theorem}
+
+    \begin{proof}
+        Denimo, da je \(f(X) = A \cup B\). Potem je \(X = f^{-1}(A) \cup f^{-1}(B)\).
+    \end{proof}
+
+    \begin{corollary}[Izrek o vmesni vrednosti]
+        Naj bo \(X\) povezana in \(f\): \(X \to Y\) zvezna. Če je \(a,b \in f(X)\), potem je \((a,b) \subseteq f(X)\).
+    \end{corollary}
+
+
+    \begin{definition}[Povezanost s potmi]
+        Prostor \(X\) je \textbf{povezan s potmi}, če za poljubna \(x,y \in X\) obstaja pot \(p\): \([0,1] \to X\), \(p(0) = x\) in \(p(1) = y\).
+    \end{definition}
+
+    \begin{proposition}
+        Če je \(X\) povezan s potmi, je \(X\) povezan.
+    \end{proposition}
+
+    \begin{proof}
+        Recimo, da \(X\) ni povezan. Potem obstaja separacija \(X = A \cup B\). Vzemimo pot \(p\) od \(a \in A\) do \(b \in B\). Potem je \(f^{-1}(A)\), \(f^{-1}(B)\) separacija \([0,1]\). Protislovje.
+    \end{proof}
+
+    \begin{theorem}
+        Če je \(M \subseteq \mathbb{R}^n\) povezana in odprta, potem je \(M\) povezana s potmi.
+    \end{theorem}
+
+    \begin{proof}
+        Izberimo \(x_o \in M\) in definiramo:
+        \begin{center}
+            \begin{tabular}{c c}
+                \(A=\) & \(\{\ x \in M\ | \) v \(M\) obstaja pot od \(x_0\) do \(x\) \(\}\) \\
+               \(B=\) & \(\{\ x \in M\ | \) v \(M\) ni poti od \(x_0\) do \(x\) \(\}\) 
+            \end{tabular}
+            
+        \end{center}
+
+        Množica \(A\) je odprta: če obstaja pot \(x \in A\), jo lahko podaljšamo do vseh točk v krogli okoli \(x\).
+        \par
+        Množica \(B\) je tudi odprta: če bi lahko s potjo prišli do neke točke v okolici \(x\), bi lahko prišli tudi do točke \(x\).
+        \par
+        Torej je \(M = A \cup B\). \(A\) in \(B\) sta obe odprti, ampak \(M\) nima separacije, zato mora biti ena izmed \(A\) in \(B\) prazna. Očitno je \(x_0 \in A\), zato je \(B = \emptyset\).
+    \end{proof}
+
+
+
+    \section{Fourierova vrsta in transformacija}
+
+    Na intervalu \([- \pi, \pi]\) želimo zvezno realno funkcijo zapisati kot vsoto sinusoid.
+    
+    \par
+    Najprej pokažimo naslednji integral, ki nam bo v pomoč:
+    \[\int_{- \pi}^{\pi} sin(mx) sin(nx) dx = 
+        \begin{cases}
+            0, & \quad{m \neq n} \\
+            \pi, & \quad{m = n}
+        \end{cases}
+    \]
+
+    Namreč: \(2 sin(mx) sin(nx) = cos((m-n)x) - cos((m+n)x)\), zato je:
+    \[\int_{- \pi}^{\pi} sin(mx) sin(nx) dx = \frac{1}{2} (\frac{-sin((m-n)x}{m-n} \Big |_{- \pi}^{\pi} + \frac{sin((m+n)x)}{m+n} \Big |_{- \pi}^{\pi}) = 0\]
+    Razen, ko je \(m = n\), ker je 
+    \[\displaystyle \int_{- \pi}^{\pi} \frac{1}{2} cos(0)dx = \frac{1}{2} \int_{- \pi}^{\pi} 1 dx = \pi\]
+    
+    \par
+    Naj bo \(f(x) = a_1 sin(x) + a_2 sin(2x) + ... = a_n sin(n)\).
+
+    \[\displaystyle \int_{- \pi}^{\pi} f(x) sin(kx) dx = a_1 \int_{- \pi}^{\pi} sin(x) sin(kx) dx + ... + a_n \int_{- \pi}^{\pi} sin(nx) sin(kx) dx = a_k \pi\].
+
+    Sledi, da je 
+    \[a_k = \frac{1}{\pi} \int_{- \pi}^{\pi} f(x) sin(kx) dx\]
+
+    To lahko naredimo tudi za poljubno integrabilno funkcijo.
+    \[s(x) = a_1 sin(x) + a_2 sin(2x) + ... + a_n sin(nx)\]
+
+    Ni nujno, da je \(s(x) = f(x)\) na \([- \pi, \pi]\), saj je \(s(x)\) soda, \(f(x)\) pa je poljubna. To lahko popravimo: vključimo še kosinuse, ki so lihe funkcije. Potrebujemo formuli:
+    \[
+        \int_{- \pi}^{\pi} cos(mx) cos(nx) dx = 
+        \begin{cases}
+            0, & \quad{m \neq n} \\
+            \pi, & \quad{m = n \neq 0} \\
+            2 \pi, & \quad{m = n = 0}
+        \end{cases}
+    \]
+    \[
+        \int_{- \pi}^{\pi} cos(mx) sin(nx) dx = 0
+    \]
+    
+    S tem dobimo naslednje formule.
+    \begin{theorem}
+        Če je \(f(x) = \frac{a_o}{2} + a_1 cos(x) + ... + a_n cos(nx) + b_1 sin(x) + ... + b_n sin(nx) \), potem koeficiente \(a_k\) in \(b_k\) dobimo s formulama:
+        \[a_k = \frac{1}{\pi} \int_{- \pi}^{\pi} f(x) cos(kx) dx\]
+        \[b_k = \frac{1}{\pi} \int_{- \pi}^{\pi} f(x) sin(kx) dx\]
+    \end{theorem}
+
+    \begin{theorem}
+        Če je \(f(x)\) poljubna funkcija, lahko uporabim zgornji formuli in dobimo vrsto:
+        \[s(x) = \frac{a_0}{2} + (a_1 cos(x) + b_1 sin(x)) + (a_2 cos(x) + b_2 sin(x)) + ...\]
+    \end{theorem}
+
+    Funkcije \(cos(kx)\) in \(sin(kx)\) so absolutno omejene z 1, zato je za konvergenco dovolj, če konvergira vrsta 
+    \[\frac{a_0}{2} + \sum_{k=1}^{\infty} (|a_k| + |b_k|)\]
+
+    Ocena velikosti \(a_k\) z integracijo po delih (računanje izpuščeno):
+    \[\pi a_k = \frac{1}{k^2} (f'(x) cos(kx) \Big|_{- \pi}^{\pi} - \int_{- \pi}^{\pi} f'' (x) cos(kx) dx)\]
+
+    Privzemimo, da \(f\) izpolnjuje vse potrebne pogoje, tj. da je dvakrat zvezno odvedljiva in \(2 \pi\)-periodična (in je zato \(f' (- \pi) = f' (\pi) \)).
+    \par
+    Zaradi zveznosti drugega odvoda je \(|f'' (x) \le M|\) na \([- \pi, \pi]\), torej je:
+    \[|a_k| \le \frac{2M}{k^2}\]
+
+    Posledično vrsta
+    \[\frac{a_0}{2} + \sum_{k=1}^{\infty} (a_k cos(kx) + b_k sin(kx))\]
+    enakomerno konvergira proti neki zvezni \(2\pi\)-periodični funkciji.
+
+    \par
+    To lahko posplošimo na vse integrabilne funkcije:
+    \begin{theorem}
+        Naj bo \(f(x)\) funkcija z naslednjimi lastnostmi:
+        \begin{itemize}
+            \item \(2\pi\)-periodična
+            \item odsekoma zvezna
+            \item v vsaki točki ima levi in desni odvod.
+        \end{itemize}
+        Potem je njena Fourierova vrsta konvergentna. Vrednost te vrste je enaka \(f(x)\) v vseh točkah, kjer je \(f\) zvezna, v ostalih pa je enaka povprečju med levo in desno limito.
+    \end{theorem}
+
+    \begin{example}
+        Fourierova vrsta od \(f(x) = x\).
+        \par
+        Funkcija je liha. Torej je \(a_n = 0\).
+        \[x = 2 (sin(x) - \frac{sin(2x)}{2} + \frac{sin(3x){3}} - \frac{sin(4x)}{4} + ...)\]
+    \end{example}
+
+    Fourierovo vrsto lahko zapišemo bolj simetrično kot kompleksno vrsto:
+    \[e^{ix} = cos(x) + isin(x)\]
+    \[e^{-ix} = cos(x) - isin(x)\]
+    
+    \[\frac{a_0}{2} + \sum_{- \infty}^{\infty} (\frac{a_n - ib_n}{2} e^{inx} + \frac{a_n + ib_n}{2}e^{-inx}) = \sum_{- \infty}^{\infty} c_n e^{inx} \]
+    
+    \[c_0 = \frac{a_0}{2}\]
+    \[c_n = \frac{a_n - ib_n}{2}\]
+    \[c_{-n} = \frac{a_n + ib_n}{2}\]
+
+    Kompleksne koeficiente lahko izračunamo direktno:
+    \[c_n = \frac{1}{\pi} \int_{- \pi}^{\pi} f(x) e^{-inx} dx,\ n \in \mathbb{N}\]
+
+    Želimo pridobiti amplitude in frekvence, ki sestavljajo \(2\pi\)-periodično funkcijo.
+    \[\frac{1}{\pi} \int_{- \pi}^{\pi} f(x) e^{-inx} dx\]
+    je amplituda \(e^{inx}\) v 
+    \[f(x) = \sum_{- \infty}^{\infty} c_n e^{inx}\]
+
+    Naslednja formula nam bo dala amplitude vseh frekvence:
+    \[\int_{- \infty}^{\infty} f(t) e^{-iwt} dt = \hat{f} (w)\]
+    \(\hat{f}(w)\) amplituda nihaja s frekvenco \(w\) v funkciji \(f(t)\).
+
+    Lastnosti Fourierove transformacije:
+    \begin{enumerate}
+        \item Da pridemo do Fourierove transformacije funkcije, mora biti funkcija absolutno integrabilna.
+        \item \(\lim_{w \pm \infty} f(w) = 0\), tj. amplitude pri zelo visokih frekvencah gredo proti 0.
+        \item Linearnost: \(\hat{af+bg} = a\hat{f}+b\hat{g}\)
+        
+        \item Razteg: 
+        \[\int_{- \infty}^{\infty} f(at) e^{-iwt} dt = \frac{1}{a} \int_{- \infty}^{\infty} f(s) e^{-i \frac{w}{a}s} ds = \frac{1}{a} \hat{f}(\frac{w}{a}) \]
+        \[\hat{f(at)} = \frac{1}{|a|} \hat{f}(\frac{w}{a})\]
+
+        \item Premik:
+        
+        \[ \hat{f(t-a)} = e^{-iwa} \hat{f}(w) \]
+
+        \item Kompleksno konjugiranje:
+        
+        \[ \hat{\overline{f(t)}} = \overline{\hat{f}(-t)} \]
+
+        \item Množenje s sinusom/kosinusom:
+        
+        \[ \hat{f(t) e^{iw_0 t}} = \hat{f}(w-w_0) \]
+
+        \item Transformacija odvoda:
+        
+        \[ \hat{f' (t)} = iw \hat{f}(w) \]
+        \[ \hat{f^{(n)}}(t) = (iw)^n \hat{f}(t) \]
+
+        \item Odvod transformiranke:
+        
+        \[ \hat{(it)^n f(t)} = \hat{f}^{(n)} (w) \]
+
+        \item Inverzna transformacija:
+        
+        \[ f(t) = \frac{1}{2\pi} \int_{- \infty}^{\infty} \hat{f}(w) e^{iwt} dw \]
+        
+
+    \end{enumerate}
+
+
+    \subsubsection{Konvolucija}
+
+    \[(a \ast b)(k) = \sum_{i} a(i) b(k - i)\]
+    \[(f \ast g)(t) = \int_{- \infty}^{\infty} f(s) g(t - s) ds\]
+    \[\hat{(f \ast g)}(w) = \hat{f}(w) \cdot \hat{g}(w)\]
 \end{document}
